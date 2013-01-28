@@ -5,6 +5,3 @@ $aliases = array();
 $aliases['en'] = array(
     'MaintenanceShell' => array( 'MaintenanceShell' ),
 );
- 
-
-?>
