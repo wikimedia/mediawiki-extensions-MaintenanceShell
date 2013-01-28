@@ -15,7 +15,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'http://www.mediawiki.org/wiki/Extension:MaintenanceShell',
 	'description' => 'Adds a special page to provide access to maintenance scripts',
 	'descriptionmsg' => 'maintenanceshell-desc',
-	'version' => '0.2.0',
+	'version' => '0.2.1',
 );
  
 $dir = dirname(__FILE__) . '/';
@@ -31,27 +31,38 @@ $wgSpecialPageGroups['MaintenanceShell'] = 'wiki';
 // New user right - required to access Special:MaintenanceShell
 $wgAvailableRights[] = 'maintenanceshell';
 		
-// catch operations before wiki does anything, so we can act like we're coming from the command line
+$wgMaintShellPermissions = 0;
+foreach ($wgGroupPermissions as $v)
+{ $wgMaintShellPermissions += array_key_exists('maintenanceshell', $v) ? 1 : 0;
+}
+	
 
+
+// catch operations before wiki does anything, so we can act like we're coming from the command line
 if (array_key_exists('commandline', $_REQUEST) && array_key_exists('title', $_REQUEST) && ($_REQUEST['title'] = 'Special:MaintenanceShell'))
 {  
+
+	// first lets check to see if we're installed correctly
+
+	if ($wgMaintShellPermissions === 0)
+	{	echo "MaintenanceShell did not detect the user right <b>maintenanceshell</b> assigned to any group.<br /><br />" .
+				"Please see <a href='http://www.mediawiki.org/wiki/Extension:MaintenanceShell'>the Extension:MaintenanceShell documentation</a> for more details.";
+		exit;
+	}
+	
 	// set up system to verify user permissions						
 	require_once('./includes/Setup.php');			
 	
-	$head_redirect = 'Location: ' . $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'] . '?title=Special:MaintenanceShell';
+	$head_redirect = 'Location: http://' .  $_SERVER['SERVER_NAME'] .                                
+	               ($_SERVER['SERVER_PORT'] =="80" ? "":$_SERVER['SERVER_PORT']) . $_SERVER['SCRIPT_NAME'] . '?title=Special:MaintenanceShell';
 	if ( $wgUser->isBlocked() || wfReadOnly() || !$wgUser->isAllowed( 'maintenanceshell' ) ) {
 		header($head_redirect);
 		return;
 	}
-
 				
 	echo '<a href="' . $_SERVER['SCRIPT_NAME'] . '&title=Special:MaintenanceShell">Return to the Maintenance Shell</a>';
-	if (array_key_exists('script', $_REQUEST) && (trim($_REQUEST['script'] == ''))) 
-	{	echo ' | <a href="' . $_SERVER['SCRIPT_NAME'] . '?title=Special:MaintenanceShell&set_password=true">Change shell password</a>';
-	}
 	
-	$maintenance_path = $IP . "/maintenance/";
-	
+	$maintenance_path = $IP . "/maintenance/";	
 	
 	$_REQUEST['commandline'] = str_ireplace('{{root}}', $_SERVER['DOCUMENT_ROOT'], $_REQUEST['commandline']);	
 	
@@ -90,6 +101,8 @@ if (array_key_exists('commandline', $_REQUEST) && array_key_exists('title', $_RE
 	} 
 	exit;
 }
+
+
 
 $wgMaintenanceShellDir  = isset($wgMaintenanceShellDir) ? $wgMaintenanceShellDir :$maintenance_path;
 ?>
