@@ -58,4 +58,3 @@ $messages['de'] = array(
 $messages['de-formal'] = array(
 'maintshell-warning'       => '<b><u>Achtung:</u> Setzen Sie diese Skripte sorgf&auml;ltig ein. Dies wird zudem nur Systemadministratoren und fortgeschrittenen Nutzern empfohlen.</b>',
 );
-);

@@ -12,7 +12,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'http://www.mediawiki.org/wiki/Extension:MaintenanceShell',
 	'description' => 'Adds a special page to provide access to maintenance scripts.',
 	'descriptionmsg' => 'maintenanceshell-desc',
-	'version' => '0.2.3',
+	'version' => '0.2.4',
 );
 
 $dir = dirname(__FILE__) . '/';
@@ -64,7 +64,7 @@ if (array_key_exists('commandline', $_REQUEST) && array_key_exists('title', $_RE
 		return;
 	}
 
-	echo '<a href="' . $_SERVER['SCRIPT_NAME'] . '?title=' . $maintshell_pagename . '>'. wfMsg_MS('maintshell-return') .  '</a>';
+	echo '<a href="' . $_SERVER['SCRIPT_NAME'] . '?title=' . $maintshell_pagename . '">'. wfMsg_MS('maintshell-return') .  '</a>';
 
 	echo '<hr />';
 	if (array_key_exists('script', $_REQUEST) and (($script = trim($_REQUEST['script'])) !== ''))
