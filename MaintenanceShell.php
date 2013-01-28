@@ -8,18 +8,18 @@ require_once( "\$IP/extensions/MaintenanceShell/MaintenanceShellphp" );
 EOT;
         exit( 1 );
 }
- 
+
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'MaintenanceShell',
 	'author' => 'SwiftlyTilting',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:MaintenanceShell',
-	'description' => 'Adds a special page to provide access to maintenance scripts',
+	'description' => 'Adds a special page to provide access to maintenance scripts.',
 	'descriptionmsg' => 'maintenanceshell-desc',
-	'version' => '0.2.1',
+	'version' => '0.2.2',
 );
- 
+
 $dir = dirname(__FILE__) . '/';
- 
+
 $wgAutoloadClasses['MaintenanceShell'] = $dir . 'MaintenanceShell_body.php'; # Tell MediaWiki to load the extension body.
 $wgExtensionMessagesFiles['MaintenanceShell'] = $dir . 'MaintenanceShell.i18n.php';
 $wgExtensionAliasesFiles['MaintenanceShell'] = $dir . 'MaintenanceShell.alias.php';
@@ -30,17 +30,17 @@ $wgSpecialPageGroups['MaintenanceShell'] = 'wiki';
 
 // New user right - required to access Special:MaintenanceShell
 $wgAvailableRights[] = 'maintenanceshell';
-		
+
 $wgMaintShellPermissions = 0;
 foreach ($wgGroupPermissions as $v)
 { $wgMaintShellPermissions += array_key_exists('maintenanceshell', $v) ? 1 : 0;
 }
-	
+
 
 
 // catch operations before wiki does anything, so we can act like we're coming from the command line
 if (array_key_exists('commandline', $_REQUEST) && array_key_exists('title', $_REQUEST) && ($_REQUEST['title'] = 'Special:MaintenanceShell'))
-{  
+{
 
 	// first lets check to see if we're installed correctly
 
@@ -49,56 +49,80 @@ if (array_key_exists('commandline', $_REQUEST) && array_key_exists('title', $_RE
 				"Please see <a href='http://www.mediawiki.org/wiki/Extension:MaintenanceShell'>the Extension:MaintenanceShell documentation</a> for more details.";
 		exit;
 	}
-	
-	// set up system to verify user permissions						
-	require_once('./includes/Setup.php');			
-	
-	$head_redirect = 'Location: http://' .  $_SERVER['SERVER_NAME'] .                                
+
+	// set up system to verify user permissions
+	require_once('./includes/Setup.php');
+
+	$head_redirect = 'Location: http://' .  $_SERVER['SERVER_NAME'] .
 	               ($_SERVER['SERVER_PORT'] =="80" ? "":$_SERVER['SERVER_PORT']) . $_SERVER['SCRIPT_NAME'] . '?title=Special:MaintenanceShell';
 	if ( $wgUser->isBlocked() || wfReadOnly() || !$wgUser->isAllowed( 'maintenanceshell' ) ) {
 		header($head_redirect);
 		return;
 	}
-				
+
 	echo '<a href="' . $_SERVER['SCRIPT_NAME'] . '&title=Special:MaintenanceShell">Return to the Maintenance Shell</a>';
-	
-	$maintenance_path = $IP . "/maintenance/";	
-	
-	$_REQUEST['commandline'] = str_ireplace('{{root}}', $_SERVER['DOCUMENT_ROOT'], $_REQUEST['commandline']);	
-	
-	// make commandLine.inc think we're coming from the command line
-	unset($_SERVER['REQUEST_METHOD']);
-	$argv = explode(' ','0 '. $_REQUEST['commandline']);			
-	$argc = count($argv);
-	
+
+	$maintenance_path = $IP . "/maintenance/";
+
 	echo '<hr />';
 	if (array_key_exists('script', $_REQUEST) and (($script = trim($_REQUEST['script'])) !== ''))
-	{	
+	{
 		$script = str_replace(array('.','/'), '', $script);
-			
+
 		$argc = count ($argv);
 		if (file_exists(trim($maintenance_path.$script.".php")))
-		{	echo "<div style='border:5px solid gray;background-color:black;color:green;padding:1em'>";
+		{
+			// display shell frame
+			echo "<div style='border:5px solid gray;background-color:black;color:green;padding:1em'>";
 			echo "<pre style='white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;white-space: pre-wrap;word-wrap: break-word;'><b>";
 			chdir(isset($wgMaintenanceShellDir) ? $wgMaintenanceShellDir : $maintenance_path);
 			echo getcwd() . "$ php ". (isset($wgMaintenanceShellDir) ? $maintenance_path : '') .$script . ".php " . $_REQUEST['commandline'] . "</b>\n\n";
-			
+
+			// make commandLine.inc think we're coming from the command line
+			// Unset request method and build $argv
+			unset($_SERVER['REQUEST_METHOD']);
+
+			$_REQUEST['commandline'] = str_ireplace('{{root}}', $_SERVER['DOCUMENT_ROOT'], $_REQUEST['commandline']);
+
+			// handle quote marks in command line
+
+			preg_match_all('%\"(.*)\"%Us', $_REQUEST['commandline'], $matches);
+			$temp_command = $_REQUEST['commandline'];
+			foreach ($matches[1] as $n => $v)
+			{
+				$temp_command = str_replace($v, str_replace(" ","\n", $v), $temp_command );
+			}
+
+			$temp_command = preg_replace('% +%', ' ', $temp_command);
+			$argv = explode(' ',basename($_SERVER[PHP_SELF]) . ' ' . $temp_command);
+
+			$search = array( '"', "\n");
+			$replace = array('', ' ');
+			foreach($argv as $n => $v)
+			{	$argv[$n] = str_replace($search, $replace, $v);
+			}
+
+			$argc = count($argv);
+
+			// catch exit calls from within the called script
+
 			function exit_callback($param = false)
-			{							
+			{
 				echo "</pre></div><hr />$param";
 				exit;
 			}
+
 			register_shutdown_function('exit_callback');
-			
-			// call the script			
+
+			// call the script
 			include_once($maintenance_path.$script.".php");
-			
+
 			exit;
 		}
 		else
 		{	echo "Script '".$maintenance_path .$script."' does not exist!";
 		}
-	} 
+	}
 	exit;
 }
 

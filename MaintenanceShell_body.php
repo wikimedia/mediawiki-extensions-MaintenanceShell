@@ -39,12 +39,14 @@ class MaintenanceShell extends SpecialPage {
 		}
 		
 		$maintenance_path = $IP.'/maintenance/';
-		$str = "<b>Warning: Use these scripts with care.  They are intended for administrators and other advanced users only.</b><br /><br /><form action='$_SERVER[SCRIPT_NAME]' method='get'>" .
+		$str = "<b>Warning: Use these scripts with care.  They are intended for administrators and other advanced users only.</b>" .
+			"<br /><br /><form action='$_SERVER[SCRIPT_NAME]' method='get'>" .
 			'<input name="title" value="Special:MaintenanceShell" type="hidden">' .
 			"<table><tr><td><b>Script name</b>:</td><td> <input name='script' value='" . (array_key_exists('script', $_REQUEST) ? trim($_REQUEST['script']) : '').  "'/>.php</td></tr>" .			
 			'<tr><td><b>Command line options</b>:</td><td> <input name="commandline" size="70" value="' .  (array_key_exists('commandline', $_REQUEST) ? trim($_REQUEST['commandline']) : '') .'"/></td></tr>' .			
-			'</table><br /><input name="submit" type="submit" value="Run script"/></form><br /><hr />';
-		
+			'</table><br /><input name="submit" type="submit" value="Run script"/></form><ul style="padding-top:1em"><li><a  class="external" href="http://www.mediawiki.org/wiki/Manual:Maintenance_scripts">Manual:Maintenance scripts</a></li>' .
+			'<li><a class="external" href="http://www.mediawiki.org/wiki/Extension:MaintenanceShell">MaintenanceShell Homepage</a></li></ul><hr />';
+		 
 			
 		$wgOut->addHTML($str);
 						
