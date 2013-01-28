@@ -1,4 +1,6 @@
 <?php
+
+
 /**
  * Special page interface for Maintenance Shell
  */
@@ -87,5 +89,5 @@ class MaintenanceShell extends SpecialPage {
 			return preg_replace_callback('%([^A-Za-z0-9 ])%', 	
 		         create_function('$matches', 'return "&#" . ord($matches[1]) .";" ;'),
 		         $string);	
-}
+	}
 }

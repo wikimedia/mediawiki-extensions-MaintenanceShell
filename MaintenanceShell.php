@@ -27,7 +27,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'http://www.mediawiki.org/wiki/Extension:MaintenanceShell',
 	'description' => 'Adds a special page to provide access to maintenance scripts.',
 	'descriptionmsg' => 'maintenanceshell-desc',
-	'version' => '0.3.0',
+	'version' => '0.3.1',
 );
 
 $dir = dirname(__FILE__) . '/';
@@ -53,11 +53,10 @@ foreach ($wgGroupPermissions as $v)
 require_once($IP . '/extensions/MaintenanceShell/MaintenanceShell.i18n.php');
 
 // check for custom settings
-global $wgMaintenancePath, $wgLanguageCode;
 
 $wgMaintenanceShellLang = isset($wgLanguageCode) ? $wgLanguageCode : 'en';
 $maintenance_path = isset( $wgMaintenancePath) ?  $wgMaintenancePath :  $IP . "/maintenance/"; 
-$maintshell_pagename = wfMsg_MS( 'maintshell-pagename');
+
 
 
 
@@ -70,48 +69,56 @@ if (!array_key_exists('commandline', $_POST)
 {
  	return;	 // bail if we're not coming from the command line form
 }
-
-
-// define some functions we'll need.  could load then from MW but it's faster to write them
-// than figure out how to cleanly load them from MW 
-// at least now they don't load unless we're actually using the maintenance shell
-	
-function wfMsg_MS($key)
-{	global $wgMaintenanceShellLang, $messages, $wgRequest; 
-	$args = func_get_args();
-   array_shift( $args );
-
-	if (array_key_exists($key, $messages[$wgMaintenanceShellLang]))
-	{	$ret = $messages[$wgMaintenanceShellLang][$key];
-	}
-	else
-	{	$ret = $messages['en'][$key];
-	}
-	
-	return wfMsgReplaceArgs_MS($ret, $args);
-}
-
-function wfMsgReplaceArgs_MS( $message, $args ) 
+else
 {
-	# Fix windows line-endings
-	# Some messages are split with explode("\n", $msg)
-	$message = str_replace( "\r", '', $message );
+	// define some functions we'll need.  could load then from MW but it's faster to write them
+	// than figure out how to cleanly load them from MW 
+	// at least now they don't load unless we're actually using the maintenance shell
+		
+	function wfMsg_MS($key)
+	{	global $wgMaintenanceShellLang, $messages, $wgRequest; 
+		$args = func_get_args();
+	   array_shift( $args );
 	
-	// Replace arguments
-	if ( count( $args ) ) {
-	        if ( is_array( $args[0] ) ) {
-	                $args = array_values( $args[0] );
-	        }
-	        $replacementKeys = array();
-	        foreach( $args as $n => $param ) {
-	                $replacementKeys['$' . ($n + 1)] = $param;
-	        }
-	        $message = strtr( $message, $replacementKeys );
+		
+		if (array_key_exists($wgMaintenanceShellLang, $messages)
+			&&	array_key_exists($key, $messages[$wgMaintenanceShellLang]))
+		{	$ret = $messages[$wgMaintenanceShellLang][$key];
+		}
+		elseif (array_key_exists('en', $messages))
+		{	$ret = $messages['en'][$key];
+		}
+		else
+		{	$ret = '[ERROR: string not found for this language]';
+		}
+		
+		return wfMsgReplaceArgs_MS($ret, $args);
 	}
 	
-	return $message;
-}
-	
+	function wfMsgReplaceArgs_MS( $message, $args ) 
+	{
+		# Fix windows line-endings
+		# Some messages are split with explode("\n", $msg)
+		$message = str_replace( "\r", '', $message );
+		
+		// Replace arguments
+		if ( count( $args ) ) {
+		        if ( is_array( $args[0] ) ) {
+		                $args = array_values( $args[0] );
+		        }
+		        $replacementKeys = array();
+		        foreach( $args as $n => $param ) {
+		                $replacementKeys['$' . ($n + 1)] = $param;
+		        }
+		        $message = strtr( $message, $replacementKeys );
+		}
+		
+		return $message;
+	}
+}	
+
+
+$maintshell_pagename = wfMsg_MS( 'maintshell-pagename');
 
 if (array_key_exists('title', $_REQUEST) 
 	&& ($_REQUEST['title'] == $maintshell_pagename)
@@ -195,7 +202,13 @@ if (array_key_exists('title', $_REQUEST)
 
 			$argc = count($argv);
 
-			// catch exit calls from within the called script			
+			// catch exit calls from within the called script							
+			function exit_callback($param = false)
+			{  
+				echo "</pre></div>";
+				exit;
+			}
+			
 			register_shutdown_function('exit_callback');
 			
 			// needed for MW 1.15
@@ -210,11 +223,7 @@ if (array_key_exists('title', $_REQUEST)
 			// exit, if the script doesn't explictly exit.  Will call the exit callback function
 			exit;
 			
-			function exit_callback($param = false)
-			{  
-				echo "</pre></div><hr />";
-				exit;
-			}
+			
 		}
 		else
 		{	echo wfMsg_MS('maintshell-noexist',  $maintenance_path .$scriptHTML);
