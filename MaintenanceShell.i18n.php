@@ -1,8 +1,8 @@
 <?php
 $messages = array();
 
-/** English)
- * @author swiftlytilting
+/** English
+ * @author Andrew Fitzgerald
  */
  
 $messages['en'] = array(
@@ -14,7 +14,7 @@ $messages['en'] = array(
    'maintshell-installfail2'  => "<b>MaintenanceShell is configured incorrectly.</b><br />The user right <b>maintenanceshell</b> must be assigned to a user group before the extension MaintanceShell is called in <b>LocalSettings.php</b>.<br /><br />Please see the <a href='http://www.mediawiki.org/wiki/Extension:MaintenanceShell'>Extension:MaintenanceShell</a> documentation for more details.",
    'maintshell-installfail3'  => 'To install MaintenanceShell, put the following code on the <b>very last line</b> of LocalSettings.php:</br />require_once( "$IP/extensions/MaintenanceShell/MaintenanceShell.php" );',
    'maintshell-return'        => 'Return to the Maintenance Shell',
-   'maintshell-noexist'       => "Script '$1' does not exist!",
+   'maintshell-noexist'       => "Script '$1.php' does not exist!",
    'maintshell-warning'       => 'Warning: Use these scripts with care.  They are intended for administrators and other advanced users only.',
    'maintshell-links'         => '<ul style="padding-top:1em">
                                     <li><a class="external" href="http://www.mediawiki.org/wiki/Manual:Maintenance_scripts">Manual:Maintenance scripts</a></li>
@@ -40,7 +40,7 @@ $messages['de'] = array(
    'maintshell-installfail2'  => "<b>Die Wartungs-Shell wurde fehlerhaft konfiguriert.</b><br />Das Benutzergruppenrecht <b>maintenanceshell</b> muss in der Datei <b>LocalSettings.php</b> einer Benutzergruppe zugewiesen werden, bevor dort die Softwareerweiterung Wartungs-Shell aufgerufen wird.<br /><br />Weitere Hinweise hierzu gibt es in der <a href='http://www.mediawiki.org/wiki/Extension:MaintenanceShell'>Dokumentation zur Wartungs-Shell</a>.",
    'maintshell-installfail3'  => 'Um die Wartungs-Shell zu aktivieren, muss folgender Code in der <b>allerletzten Zeile</b> der Datei <b>LocalSettings.php</b> eingef&uuml;gt werden:</br />require_once( "$IP/extensions/MaintenanceShell/MaintenanceShell.php" );',
    'maintshell-return'        => 'R&uuml;ckkehr zur Wartungs-Shell',
-   'maintshell-noexist'       => "Das Skript '$1' ist nicht vorhanden!",
+   'maintshell-noexist'       => "Das Skript '$1.php' ist nicht vorhanden!",
    'maintshell-warning'       => '<b><u>Achtung:</u> Setze diese Skripte sorgf&auml;ltig ein. Dies wird zudem nur Systemadministratoren und fortgeschrittenen Nutzern empfohlen.</b>',
    'maintshell-links'         => '<ul style="padding-top:1em">
 			            <li><a class="external" href="http://www.mediawiki.org/wiki/Manual:Maintenance_scripts">Nutzeranleitung f&uuml;r die Wartungs-Shell (englisch)</a></li>

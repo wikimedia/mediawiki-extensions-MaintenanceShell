@@ -1,4 +1,7 @@
 <?php
+/**
+ * Special page interface for Maintenance Shell
+ */
 class MaintenanceShell extends SpecialPage {
 	function __construct() {
 		parent::__construct( 'MaintenanceShell','maintenanceshell' );
@@ -29,6 +32,7 @@ class MaintenanceShell extends SpecialPage {
  
 		$this->setHeaders();
  		
+ 		$token = $wgUser->getToken();
  		
 		
 		if ($wgMaintShellPermissions === 0)
@@ -37,13 +41,17 @@ class MaintenanceShell extends SpecialPage {
 				return;
 		}
 		
+		$scriptNameHTML = self::HTMLescape($wgRequest->getText('script'));
+		$commandlineHTML = self::HTMLescape($wgRequest->getText('commandline'));
+		
 		$maintenance_path = $IP.'/maintenance/';
 		$str = '<b>' . wfMsg('maintshell-warning'). '</b>' .
-			"<br /><br /><form action='$_SERVER[SCRIPT_NAME]' method='get'>" .
+			"<br /><br /><form action='$_SERVER[SCRIPT_NAME]' method='post'>" .
 			'<input name="title" value="Special:MaintenanceShell" type="hidden">' .
-			"<table><tr><td><b>". wfMsg('maintshell-scriptname') ."</b>:</td><td> <input name='script' value='" . (array_key_exists('script', $_REQUEST) ? trim($_REQUEST['script']) : '').  "'/>.php</td></tr>" .			
-			'<tr><td><b>'. wfMsg('maintshell-commandline') .'</b>:</td><td> <input name="commandline" size="70" value="' .  (array_key_exists('commandline', $_REQUEST) ? trim($_REQUEST['commandline']) : '') .'"/></td></tr>' .			
-			'</table><br /><input name="submit" type="submit" value="' . wfMsg('maintshell-runscript') . '"/></form>'. wfMsg('maintshell-links') .'<hr />';
+			"<table><tr><td><b>". wfMsg('maintshell-scriptname') ."</b>:</td><td> <input name='script' value='" . $scriptNameHTML .  "'/>.php</td></tr>" .			
+			'<tr><td><b>'. wfMsg('maintshell-commandline') .'</b>:</td><td> <input name="commandline" size="70" value="' .  $commandlineHTML .'"/></td></tr>' .			
+			'</table><br /><input name="submit" type="submit" value="' . wfMsg('maintshell-runscript') . '"/>'
+			.'<input type="hidden" name="token" value="' .$token . '" /> </form>'. wfMsg('maintshell-links') .'<hr />';
 		 
 			
 		$wgOut->addHTML($str);
@@ -69,5 +77,15 @@ class MaintenanceShell extends SpecialPage {
 		
 		$wgOut->addHTML('</pre>');
 		
-	}
+	}	
+
+	/**
+	 * aggressively escape everything besides letters and numbers
+	 */
+	static function HTMLescape($string)
+	{
+			return preg_replace_callback('%([^A-Za-z0-9 ])%', 	
+		         create_function('$matches', 'return "&#" . ord($matches[1]) .";" ;'),
+		         $string);	
+}
 }
