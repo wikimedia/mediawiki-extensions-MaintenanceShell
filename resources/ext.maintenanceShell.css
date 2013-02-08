@@ -1,0 +1,13 @@
+.mw-sp-maintenanceShell-shell {
+	padding: 1em;
+	background: #000;
+	color: #f9f9f9;
+	font: normal 12px/1.4 Menlo, Monaco, 'Courier', monospace;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+.mw-sp-maintenanceShell-shell-error b {
+	color: red;
+	font-weight: bold;
+}
