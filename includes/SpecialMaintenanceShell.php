@@ -162,6 +162,14 @@ class SpecialMaintenanceShell extends FormSpecialPage {
 			try {
 				$maintenance->execute();
 				$maintenance->globals();
+
+				// Perform deferred updates
+				DeferredUpdates::doUpdates( 'commit' );
+
+				// Close up pending commits
+				$factory = wfGetLBFactory();
+				$factory->commitMasterChanges();
+				$factory->shutdown();
 			} catch ( MWException $mwe ) {
 				echo $mwe->getText();
 			}
