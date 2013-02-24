@@ -68,7 +68,7 @@
 							$wrap.replaceWith( $tmpWrap );
 							init( $tmpWrap );
 						} else {
-							$shell.text( data );
+							$shell.text( $.trim( data ) );
 						}
 					} )
 					.fail( function ( jqXHR, textStatus, errorThrown ) {

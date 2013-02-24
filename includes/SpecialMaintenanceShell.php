@@ -133,6 +133,9 @@ class SpecialMaintenanceShell extends FormSpecialPage {
 		// Output plain text header to avoid output being misintepreted as html
 		header( 'Content-Type: text/plain; charset=utf-8' );
 
+		// Output non-empty string before `exit` (bug 45338)
+		echo "\n";
+
 		require_once( $filePath );
 
 		// We could eval the entire extension, but lets only eval the part
