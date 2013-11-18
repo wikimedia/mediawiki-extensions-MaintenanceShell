@@ -15,13 +15,13 @@ $messages['en'] = array(
 
 	# Special:MaintenanceShell
 	'maintenanceshell-legend'            => 'Maintenance Shell',
-	'maintenanceshell-text'              => "'''Warning:''' Use these scripts with care.  They are intended for developers only.
+	'maintenanceshell-text'              => "'''Warning:''' Use these scripts with care. They are intended for developers only.
 * [//www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]
 * [//www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]
 ",
 	'maintenanceshell-return'            => 'Return to [[{{#special:maintenanceshell}}]].',
 	'maintenanceshell-error-scriptname'  => 'Script not found',
-	'maintenanceshell-error-rawsubmit'   => 'For security reasons, this page requires javascript to be enabled.',
+	'maintenanceshell-error-rawsubmit'   => 'For security reasons, this page requires JavaScript to be enabled.',
 	'maintenanceshell-available'         => 'Available maintenance scripts:',
 	'maintenanceshell-field-scriptname'  => 'Script name:',
 	'maintenanceshell-field-args'        => 'Command line options:',
