@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "kghbln"
+        ]
+    },
+    "maintenanceshell": "Wartungs-Shell",
+    "maintenanceshell-desc": "Erg&auml;nzt eine [[Special:MaintenanceShell|Spezialseite]] mit hilfreichen Links zu Wartungsskripten f&uuml;r die Systemadministration.",
+    "maintenanceshell-pagename": "Special:Wartungs-Shell",
+    "right-maintenanceshell": "Wartungsskripte &uuml;ber die Wartungs-Shell ausf&uuml;hren.",
+    "maintenanceshell-warning": "'''Achtung:''' Setze diese Skripte sorgf&auml;ltig ein. Dies wird zudem nur Systemadministratoren und fortgeschrittenen Nutzern empfohlen.",
+    "maintenanceshell-return": "R&uuml;ckkehr zur Wartungs-Shell",
+    "maintenanceshell-noexist": "Das Skript ist nicht vorhanden",
+    "maintenanceshell-available": "Verf&uuml;gbare Wartungsskripte:",
+    "maintenanceshell-field-script": "Name des Skrips:",
+    "maintenanceshell-commandline": "Zus&auml;tzliche Kommandos:",
+    "maintenanceshell-field-args": "Skript ausf&uuml;hren"
+}

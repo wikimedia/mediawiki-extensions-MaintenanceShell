@@ -18,7 +18,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'https://www.mediawiki.org/wiki/Extension:MaintenanceShell',
 	'description' => 'Adds a special page to provide access to maintenance scripts.',
 	'descriptionmsg' => 'maintenanceshell-desc',
-	'version' => '0.4.0',
+	'version' => '0.5.0',
 );
 
 
@@ -30,6 +30,7 @@ $dir = dirname( __FILE__ );
 $wgAutoloadClasses['MaintenanceShellHooks'] = $dir . '/MaintenanceShell.hooks.php';
 $wgAutoloadClasses['SpecialMaintenanceShell'] = $dir . '/includes/SpecialMaintenanceShell.php';
 $wgAutoloadClasses['MaintenanceShellArgumentsParser'] = $dir . '/includes/MaintenanceShellArgumentsParser.php';
+$wgMessagesDirs['MaintenanceShell'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['MaintenanceShell'] = $dir . '/MaintenanceShell.i18n.php';
 $wgExtensionMessagesFiles['MaintenanceShellAlias'] = $dir . '/MaintenanceShell.alias.php';
 
