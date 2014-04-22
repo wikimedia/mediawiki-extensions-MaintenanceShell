@@ -4,8 +4,16 @@
 			"paladox"
 		]
 	},
-	"maintenanceshell": "Maintenance Shell is the name of the extension.",
+	"maintenanceshell": "{{doc-special|Maintenance Shell}}\n{{Identical|Maintenance Shell}}",
 	"maintenanceshell-desc": "{{desc|name=MaintenanceShell|url=http://www.mediawiki.org/wiki/Extension:MaintenanceShell}}",
 	"right-maintenanceshell": "{{doc-right|maintenanceshell}}",
+	"action-maintenanceshell": "{{doc-action|maintenanceshell}}",
+	"maintenanceshell-text": "This is a label warning the user to use with care.",
+	"maintenanceshell-return": "This is a button that says would you like to be redirected back special:maintenanceshell",
+	"maintenanceshell-error-scriptname": "This is a label for when it can not find the script.",
+	"maintenanceshell-error-rawsubmit": "This is a label and says that for security reasons you have to have JavaScript enabled.",
+	"maintenanceshell-available": "This is a label to say what available scripts there are.",
+	"maintenanceshell-field-scriptname": "This is a label and shows the script names.",
+	"maintenanceshell-field-args": "This is a label to show available command line options.",
 	"maintenanceshell-field-submit": "Used as label for the Submit button"
 }
