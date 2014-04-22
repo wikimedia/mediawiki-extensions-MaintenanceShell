@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"paladox"
+		]
+	},
+	"maintenanceshell": "Maintenance Shell is the name of the extension.",
+	"maintenanceshell-desc": "{{desc|name=MaintenanceShell|url=http://www.mediawiki.org/wiki/Extension:MaintenanceShell}}",
+	"right-maintenanceshell": "{{doc-right|maintenanceshell}}",
+	"maintenanceshell-field-submit": "Used as label for the Submit button"
+}
