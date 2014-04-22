@@ -47,7 +47,6 @@ class SpecialMaintenanceShell extends FormSpecialPage {
 				'type' => 'select',
 				'label-message' => 'maintenanceshell-field-scriptname',
 				'tabindex' => '1',
-				'size' => '45',
 				'required' => true,
 				'options' => $options,
 				'default' => '',
