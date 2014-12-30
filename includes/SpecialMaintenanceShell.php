@@ -132,7 +132,7 @@ class SpecialMaintenanceShell extends FormSpecialPage {
 		// Output non-empty string before `exit` (bug 45338)
 		echo "\n";
 
-		require_once( $filePath );
+		require_once $filePath;
 
 		// We could eval the entire extension, but lets only eval the part
 		// we need, namely the variable class extension.
