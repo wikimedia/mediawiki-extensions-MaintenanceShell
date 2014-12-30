@@ -7,8 +7,6 @@
  * That's good but ideally we'd use a custom token (Like FormAction allows).
  */
 class SpecialMaintenanceShell extends FormSpecialPage {
-	private $maintshellOutput = '';
-
 	public function __construct() {
 		parent::__construct( 'MaintenanceShell', 'maintenanceshell' );
 		$out = $this->getOutput();
@@ -94,10 +92,6 @@ class SpecialMaintenanceShell extends FormSpecialPage {
 		}
 
 		$this->mainshellExec( $filePath, $data['Arguments'] );
-
-		#$this->maintshellPrompt = getcwd() . '$ php ' . $data['Script'] . ' ' . $data['Arguments'];
-		#$this->maintshellOutput = $this->mainshellExec( $filePath, $data['Arguments'] );
-		#return true;
 	}
 
 
