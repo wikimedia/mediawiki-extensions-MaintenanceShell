@@ -115,7 +115,7 @@ class SpecialMaintenanceShell extends FormSpecialPage {
 	 * to the browser as plain text.
 	 */
 	private function mainshellExec( $filePath, $arguments ) {
-		global $wgMaintenanceShellPath, $IP, $wgTitle;
+		global $wgMaintenanceShellPath, $wgTitle;
 
 		// Replace placeholders
 		$arguments = str_ireplace( '{{root}}', $_SERVER['DOCUMENT_ROOT'], $arguments );
