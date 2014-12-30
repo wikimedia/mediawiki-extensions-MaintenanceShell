@@ -107,6 +107,9 @@ class SpecialMaintenanceShell extends FormSpecialPage {
 	/**
 	 * Execute the script and echo output
 	 * to the browser as plain text.
+	 *
+	 * @param string $filePath
+	 * @param string $arguments
 	 */
 	private function mainshellExec( $filePath, $arguments ) {
 		global $wgMaintenanceShellPath, $wgTitle;

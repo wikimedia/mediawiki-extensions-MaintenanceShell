@@ -105,6 +105,9 @@ class MaintenanceShellArgumentsParserTest extends MediaWikiTestCase {
 
 	/**
 	 * @dataProvider provideArguments
+	 * @param string $input
+	 * @param array $expected
+	 * @param string $message
 	 */
 	public function testParseArguments( $input, Array $expected, $message ) {
 		$parser = new MaintenanceShellArgumentsParser( $input );
