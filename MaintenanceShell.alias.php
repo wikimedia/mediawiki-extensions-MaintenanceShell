@@ -1,7 +1,15 @@
 <?php
-$aliases = array();
+/**
+ * Aliases for special pages of MaintenanceShell extension.
+ *
+ * @file
+ * @ingroup Extensions
+ */
+// @codingStandardsIgnoreFile
 
-/** English */
-$aliases['en'] = array(
+$specialPageAliases = array();
+
+/** English (English) */
+$specialPageAliases['en'] = array(
 	'MaintenanceShell' => array( 'MaintenanceShell' ),
 );
