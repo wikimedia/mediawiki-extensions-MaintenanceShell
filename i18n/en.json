@@ -7,7 +7,7 @@
 	"maintenanceshell": "Maintenance Shell",
 	"maintenanceshell-desc": "Wiki interface for maintenance scripts",
 	"right-maintenanceshell": "Execute maintenance scripts",
-	"action-maintenanceshell": "the maintenance shell",
+	"action-maintenanceshell": "execute the maintenance shell",
 	"maintenanceshell-legend": "Maintenance Shell",
 	"maintenanceshell-text": "<strong>Warning:</strong> Use these scripts with care. They are intended for developers only.\n* [//www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [//www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]\n",
 	"maintenanceshell-return": "Return to [[{{#special:maintenanceshell}}]].",

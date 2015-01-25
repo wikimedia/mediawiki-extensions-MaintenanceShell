@@ -16,7 +16,6 @@ $wgExtensionCredits['specialpage'][] = array(
 		'Timo Tijhof',
 	),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:MaintenanceShell',
-	'description' => 'Adds a special page to provide access to maintenance scripts.',
 	'descriptionmsg' => 'maintenanceshell-desc',
 	'version' => '0.5.0',
 );
