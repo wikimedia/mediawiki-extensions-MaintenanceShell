@@ -1,18 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "kghbln"
-        ]
-    },
-    "maintenanceshell": "Wartungs-Shell",
-    "maintenanceshell-desc": "Ergänzt eine [[Special:MaintenanceShell|Spezialseite]] mit hilfreichen Links zu Wartungsskripten für die Systemadministration.",
-    "maintenanceshell-pagename": "Special:Wartungs-Shell",
-    "right-maintenanceshell": "Wartungsskripte über die Wartungs-Shell ausführen.",
-    "maintenanceshell-warning": "'''Achtung:''' Setze diese Skripte sorgfältig ein. Dies wird zudem nur Systemadministratoren und fortgeschrittenen Nutzern empfohlen.",
-    "maintenanceshell-return": "Rückkehr zur Wartungs-Shell",
-    "maintenanceshell-noexist": "Das Skript ist nicht vorhanden",
-    "maintenanceshell-available": "Verfügbare Wartungsskripte:",
-    "maintenanceshell-field-script": "Name des Skrips:",
-    "maintenanceshell-commandline": "Zusätzliche Kommandos:",
-    "maintenanceshell-field-args": "Skript ausführen"
+	"@metadata": {
+		"authors": [
+			"kghbln",
+			"Metalhead64"
+		]
+	},
+	"maintenanceshell": "Wartungs-Shell",
+	"maintenanceshell-desc": "Ergänzt eine Spezialseite mit hilfreichen Links zu Wartungsskripten für die Systemadministration.",
+	"right-maintenanceshell": "Wartungsskripte über die Wartungs-Shell ausführen.",
+	"action-maintenanceshell": "die Wartungsshell auszuführen",
+	"maintenanceshell-legend": "Wartungsshell",
+	"maintenanceshell-text": "<strong>Warnung:</strong> Benutze diese Skripte mit Vorsicht. Sie sind nur für Entwickler gedacht.\n* [//www.mediawiki.org/wiki/Manual:Maintenance_scripts/de Manual:Maintenance scripts]\n* [//www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-return": "Rückkehr zu [[{{#special:maintenanceshell}}]]",
+	"maintenanceshell-error-scriptname": "Skript nicht gefunden",
+	"maintenanceshell-error-rawsubmit": "Aus Sicherheitsgründen erfordert diese Seite aktiviertes JavaScript.",
+	"maintenanceshell-available": "Verfügbare Wartungsskripte:",
+	"maintenanceshell-field-scriptname": "Name des Skripts:",
+	"maintenanceshell-field-args": "Skript ausführen",
+	"maintenanceshell-field-submit": "Skript ausführen"
 }

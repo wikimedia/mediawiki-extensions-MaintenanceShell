@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Benjozork"
+		]
+	},
+	"maintenanceshell-desc": "Interface wiki pour les scripts de maintenance",
+	"right-maintenanceshell": "Lancer les scripts de maintenance",
+	"maintenanceshell-text": "<strong>Avertissement:</strong> Utilisez ces scripts avec soin. Ils sont destinés aux développeurs uniquement.\n* [//www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [//www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-return": "Retour à [[{{#special:maintenanceshell}}]].",
+	"maintenanceshell-error-scriptname": "Script introuvable",
+	"maintenanceshell-error-rawsubmit": "Pour des raisons de sécurité, cette page nécessite l'activation de JavaScript.",
+	"maintenanceshell-available": "Scripts de maintenance disponibles:",
+	"maintenanceshell-field-scriptname": "Nom du Script:",
+	"maintenanceshell-field-args": "Options de ligne de commande:",
+	"maintenanceshell-field-submit": "Exécuter le script"
+}
