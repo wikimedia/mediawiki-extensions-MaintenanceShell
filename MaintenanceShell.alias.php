@@ -23,3 +23,8 @@ $specialPageAliases['de'] = array(
 $specialPageAliases['mk'] = array(
 	'MaintenanceShell' => array( 'ЛушпаЗаОдржување' ),
 );
+
+/** Simplified Chinese (中文（简体）‎) */
+$specialPageAliases['zh-hans'] = array(
+	'MaintenanceShell' => array( '维护Shell' ),
+);
