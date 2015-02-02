@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aktron",
+			"Mormegil"
+		]
+	},
+	"maintenanceshell": "Konzole údržby",
+	"maintenanceshell-desc": "Rozhraní wiki pro údržbové skripty",
+	"right-maintenanceshell": "Spouštění skriptů údržby",
+	"action-maintenanceshell": "spustit konzoli údržby",
+	"maintenanceshell-legend": "Konzole údržby",
+	"maintenanceshell-return": "Zpět na [[{{#special:maintenanceshell}}]].",
+	"maintenanceshell-error-scriptname": "Skript nenalezen.",
+	"maintenanceshell-error-rawsubmit": "Z bezpečnostních důvodů musí být na této stránce povolen JavaScript.",
+	"maintenanceshell-available": "Dostupné skripty údržby:",
+	"maintenanceshell-field-scriptname": "Název skriptu:",
+	"maintenanceshell-field-args": "Možnosti příkazové řádky:",
+	"maintenanceshell-field-submit": "Spustit skript"
+}
