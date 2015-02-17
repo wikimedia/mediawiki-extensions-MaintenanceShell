@@ -5,6 +5,7 @@
 		]
 	},
 	"maintenanceshell-desc": "Interfejs wiki do zarządzania skryptami",
+	"maintenanceshell-return": "Powrót do [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Nie znaleziono skryptu",
 	"maintenanceshell-field-scriptname": "Nazwa skryptu:",
 	"maintenanceshell-field-args": "Opcje linii poleceń:",
