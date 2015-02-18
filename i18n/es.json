@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"maintenanceshell-error-scriptname": "No se encontró la secuencia de órdenes",
+	"maintenanceshell-field-scriptname": "Nombre de la secuencia de órdenes:",
+	"maintenanceshell-field-args": "Opciones de la consola:",
+	"maintenanceshell-field-submit": "Ejecutar secuencia de órdenes"
+}
