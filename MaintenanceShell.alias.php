@@ -14,6 +14,11 @@ $specialPageAliases['en'] = array(
 	'MaintenanceShell' => array( 'MaintenanceShell' ),
 );
 
+/** Arabic (العربية) */
+$specialPageAliases['ar'] = array(
+	'MaintenanceShell' => array( 'شل_الصيانة' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'MaintenanceShell' => array( 'Wartungs-Shell' ),
