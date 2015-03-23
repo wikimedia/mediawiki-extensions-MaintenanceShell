@@ -33,3 +33,8 @@ $specialPageAliases['mk'] = array(
 $specialPageAliases['zh-hans'] = array(
 	'MaintenanceShell' => array( '维护Shell' ),
 );
+
+/** Traditional Chinese (中文（繁體）‎) */
+$specialPageAliases['zh-hant'] = array(
+	'MaintenanceShell' => array( '維護Shell' ),
+);

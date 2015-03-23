@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"paladox"
+			"paladox",
+			"Umherirrender"
 		]
 	},
 	"maintenanceshell": "{{doc-special|Maintenance Shell}}\n{{Identical|Maintenance Shell}}",
-	"maintenanceshell-desc": "{{desc|name=MaintenanceShell|url=http://www.mediawiki.org/wiki/Extension:MaintenanceShell}}",
+	"maintenanceshell-desc": "{{desc|name=MaintenanceShell|url=https://www.mediawiki.org/wiki/Extension:MaintenanceShell}}",
 	"right-maintenanceshell": "{{doc-right|maintenanceshell}}",
 	"action-maintenanceshell": "{{doc-action|maintenanceshell}}",
 	"maintenanceshell-legend": "{{Identical|Maintenance Shell}}",
