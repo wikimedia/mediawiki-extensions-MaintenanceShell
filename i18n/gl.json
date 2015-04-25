@@ -1,8 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
-			"Banjo"
+			"Banjo",
+			"Elisardojm"
 		]
 	},
-	"maintenanceshell-field-args": "Opcións de liña de comandos:"
+	"maintenanceshell-desc": "Interface wiki para scripts de mantemento",
+	"right-maintenanceshell": "Executar os scripts de mantemento",
+	"maintenanceshell-return": "Volver a [[{{#special:maintenanceshell}}]].",
+	"maintenanceshell-error-scriptname": "Non se atopou o script.",
+	"maintenanceshell-error-rawsubmit": "Por razóns de seguridade esta páxina precisa que estea activo o JavaScript.",
+	"maintenanceshell-available": "Scripts de mantemento dispoñibles:",
+	"maintenanceshell-field-scriptname": "Nome do script:",
+	"maintenanceshell-field-args": "Opcións de liña de comandos:",
+	"maintenanceshell-field-submit": "Executar o script"
 }
