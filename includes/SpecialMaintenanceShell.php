@@ -174,4 +174,8 @@ class SpecialMaintenanceShell extends FormSpecialPage {
 		// If the script doesn't explictly exit, we'll exit anyway
 		exit;
 	}
+
+	protected function getGroupName() {
+		return 'wiki';
+	}
 }

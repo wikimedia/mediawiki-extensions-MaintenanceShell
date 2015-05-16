@@ -35,7 +35,6 @@ $wgExtensionMessagesFiles['MaintenanceShellAlias'] = $dir . '/MaintenanceShell.a
 
 // Register special pages
 $wgSpecialPages['MaintenanceShell'] = 'SpecialMaintenanceShell';
-$wgSpecialPageGroups['MaintenanceShell'] = 'wiki';
 
 // Register user rights
 $wgAvailableRights[] = 'maintenanceshell';
