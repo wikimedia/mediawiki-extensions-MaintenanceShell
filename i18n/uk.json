@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ата"
+		]
+	},
+	"maintenanceshell-desc": "Вікіінтерфейс для скриптів підтримки",
+	"right-maintenanceshell": "Виконання скриптів підтримки",
+	"maintenanceshell-text": "<strong>Застереження:</strong> Використовуйте ці скрипти обережно. Вони призначені лише для розробників.\n* [//www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [//www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-return": "Повернутися до [[{{#special:maintenanceshell}}]].",
+	"maintenanceshell-error-scriptname": "Скрипт не знайдено",
+	"maintenanceshell-error-rawsubmit": "З міркувань безпеки ця сторінка вимагає увімкнути JavaScript.",
+	"maintenanceshell-available": "Доступні скрипти підтримки:",
+	"maintenanceshell-field-scriptname": "Назва скрипта:",
+	"maintenanceshell-field-args": "Параметри командного рядка:",
+	"maintenanceshell-field-submit": "Запустити скрипт"
+}
