@@ -1,0 +1,6 @@
+{
+	"preset": "wikimedia",
+	"excludeFiles": [
+		"node_modules/**"
+	]
+}
