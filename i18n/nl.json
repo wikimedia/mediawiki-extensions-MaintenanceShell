@@ -10,7 +10,7 @@
 	"right-maintenanceshell": "Het uitvoeren van onderhoud scripts",
 	"action-maintenanceshell": "het uitvoeren van het onderhoud shell",
 	"maintenanceshell-legend": "Onderhoud Shell",
-	"maintenanceshell-text": "<strong>Waarschuwing:</strong> Gebruik deze scripts met zorg. Ze zijn bedoeld voor ontwikkelaars alleen.\n* [//www.mediawiki.org/wiki/Manual:Maintenance_scripts Handboek:Onderhoud scripts]\n* [//www.mediawiki.org/wiki/Extension:MaintenanceShell Uitbreiding:MaintenanceShell]",
+	"maintenanceshell-text": "<strong>Waarschuwing:</strong> Gebruik deze scripts met zorg. Ze zijn bedoeld voor ontwikkelaars alleen.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Handboek:Onderhoud scripts]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Uitbreiding:MaintenanceShell]",
 	"maintenanceshell-return": "Terug naar [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Script niet gevonden",
 	"maintenanceshell-error-rawsubmit": "Om redenen van veiligheid, deze pagina vereist JavaScript worden ingeschakeld.",
