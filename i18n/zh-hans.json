@@ -9,7 +9,7 @@
 	"right-maintenanceshell": "执行维护脚本",
 	"action-maintenanceshell": "执行维护shell",
 	"maintenanceshell-legend": "维护Shell",
-	"maintenanceshell-text": "<strong>警告：</strong>请小心使用这些脚本。这些只用于开发人员。\n* [//www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:维护脚本]\n* [//www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-text": "<strong>警告：</strong>请小心使用这些脚本。这些只用于开发人员。\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:维护脚本]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "返回[[{{#special:maintenanceshell}}]]。",
 	"maintenanceshell-error-scriptname": "找不到脚本",
 	"maintenanceshell-error-rawsubmit": "由于安全原因，此页面需要启用JavaScript。",

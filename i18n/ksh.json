@@ -9,7 +9,7 @@
 	"right-maintenanceshell": "Projrämmsche för de Waadong ußföhre",
 	"action-maintenanceshell": "Projrämmsche för de Waadong ußföhre",
 	"maintenanceshell-legend": "Projrämmsche för de Waadong",
-	"maintenanceshell-text": "<strong>Opjepaß:</strong> Sid förseschtesch met heh dä Projrämmsche. Se sin bloß för de Äntweckler jedaach.\n* [//www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [//www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-text": "<strong>Opjepaß:</strong> Sid förseschtesch met heh dä Projrämmsche. Se sin bloß för de Äntweckler jedaach.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "Jangk retuur op di Sigg [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Dat Projrämmsche ham_mer nit jefonge.",
 	"maintenanceshell-error-rawsubmit": "Zor Sescherheit welle mer för heh di Sigg han, dat JavaSkrep ennjeschalld es.",

@@ -6,7 +6,7 @@
 	},
 	"maintenanceshell-desc": "Вікіінтерфейс для скриптів підтримки",
 	"right-maintenanceshell": "Виконання скриптів підтримки",
-	"maintenanceshell-text": "<strong>Застереження:</strong> Використовуйте ці скрипти обережно. Вони призначені лише для розробників.\n* [//www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [//www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-text": "<strong>Застереження:</strong> Використовуйте ці скрипти обережно. Вони призначені лише для розробників.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "Повернутися до [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Скрипт не знайдено",
 	"maintenanceshell-error-rawsubmit": "З міркувань безпеки ця сторінка вимагає увімкнути JavaScript.",
