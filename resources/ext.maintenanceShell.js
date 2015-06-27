@@ -2,7 +2,7 @@
 
 	function err( $shell, errorMsg ) {
 		$shell.append(
-			$('<p><b>&gt;</b> </p>' )
+			$( '<p><b>&gt;</b> </p>' )
 				.addClass( 'mw-sp-maintenanceShell-shell-error' )
 				.append( document.createTextNode( errorMsg ) )
 		);
@@ -26,7 +26,7 @@
 					$tmpWrap,
 					$form = $( this ),
 					postData = $form.serialize(),
-					$inputs = $form.find( ':input' ), // select, input, textarea, button 
+					$inputs = $form.find( ':input' ), // select, input, textarea, button
 					$wrap = $form.closest( '.mw-sp-maintenanceShell' ),
 					$shell = $wrap.find( '.mw-sp-maintenanceShell-shell' ).empty();
 				if ( !$shell.length ) {
@@ -37,7 +37,7 @@
 
 				// Disable form and show spinner
 				$inputs.prop( 'disabled', true ); // Could store original state, but we don't have disabled fields..
-				$spinner = $.createSpinner({ size: 'large', type: 'block' });
+				$spinner = $.createSpinner( { size: 'large', type: 'block' } );
 				$form.find( 'fieldset' ).eq( 0 ).append( $spinner );
 
 				// So far the only known restriction/limitation: --wiki doens't work
@@ -64,7 +64,7 @@
 						// Extract the SpecialPage wrapper, and replace our current one to show the error.
 						// Then re-run our init handlers on the wrapper.
 						if ( data.indexOf( 'mw-sp-maintenanceShell' ) !== -1 || data.indexOf( 'controlfield' ) !== -1 ) {
-							$tmpWrap = $(data).find( '.mw-sp-maintenanceShell' ).eq( 0 );
+							$tmpWrap = $( data ).find( '.mw-sp-maintenanceShell' ).eq( 0 );
 							$wrap.replaceWith( $tmpWrap );
 							init( $tmpWrap );
 						} else {

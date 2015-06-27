@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "jshint . && jscs ."
+  },
+  "devDependencies": {
+    "jscs": "1.13.1",
+    "jshint": "2.8.0"
+  }
+}
