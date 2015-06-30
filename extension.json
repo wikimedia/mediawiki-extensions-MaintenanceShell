@@ -1,0 +1,53 @@
+{
+	"name": "MaintenanceShell",
+	"version": "0.5.0",
+	"author": [
+		"[http://swiftlytilting.com Andrew Fitzgerald]",
+		"Timo Tijhof"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:MaintenanceShell",
+	"descriptionmsg": "maintenanceshell-desc",
+	"type": "specialpage",
+	"AvailableRights": [
+		"maintenanceshell"
+	],
+	"ExtensionFunctions": [
+		"MaintenanceShellHooks::onSetup"
+	],
+	"SpecialPages": {
+		"MaintenanceShell": "SpecialMaintenanceShell"
+	},
+	"MessagesDirs": {
+		"MaintenanceShell": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"MaintenanceShellAlias": "MaintenanceShell.alias.php"
+	},
+	"AutoloadClasses": {
+		"MaintenanceShellHooks": "MaintenanceShell.hooks.php",
+		"SpecialMaintenanceShell": "includes/SpecialMaintenanceShell.php",
+		"MaintenanceShellArgumentsParser": "includes/MaintenanceShellArgumentsParser.php"
+	},
+	"ResourceModules": {
+		"ext.maintenanceShell": {
+			"scripts": "resources/ext.maintenanceShell.js",
+			"styles": "resources/ext.maintenanceShell.css",
+			"dependencies": "jquery.spinner"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "MaintenanceShell"
+	},
+	"Hooks": {
+		"UnitTestsList": [
+			"MaintenanceShellHooks::onUnitTestsList"
+		]
+	},
+	"config": {
+		"MaintenanceShellPath": false
+	},
+	"manifest_version": 1
+}

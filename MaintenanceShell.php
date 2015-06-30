@@ -9,54 +9,12 @@
  * @license GNU GPL
  */
 
-$wgExtensionCredits['specialpage'][] = array(
-	'name' => 'MaintenanceShell',
-	'author' => array(
-		'[http://swiftlytilting.com Andrew Fitzgerald]',
-		'Timo Tijhof',
-	),
-	'url' => 'https://www.mediawiki.org/wiki/Extension:MaintenanceShell',
-	'descriptionmsg' => 'maintenanceshell-desc',
-	'version' => '0.5.0',
-);
-
-
-/* Setup */
-
-$dir = dirname( __FILE__ );
-
-// Register files
-$wgAutoloadClasses['MaintenanceShellHooks'] = $dir . '/MaintenanceShell.hooks.php';
-$wgAutoloadClasses['SpecialMaintenanceShell'] = $dir . '/includes/SpecialMaintenanceShell.php';
-$wgAutoloadClasses['MaintenanceShellArgumentsParser'] = $dir . '/includes/MaintenanceShellArgumentsParser.php';
-$wgMessagesDirs['MaintenanceShell'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['MaintenanceShellAlias'] = $dir . '/MaintenanceShell.alias.php';
-
-// Register special pages
-$wgSpecialPages['MaintenanceShell'] = 'SpecialMaintenanceShell';
-
-// Register user rights
-$wgAvailableRights[] = 'maintenanceshell';
-
-// Register hooks
-$wgExtensionFunctions[] = 'MaintenanceShellHooks::onSetup';
-$wgHooks['UnitTestsList'][] = 'MaintenanceShellHooks::onUnitTestsList';
-
-// Register modules
-$wgResourceModules['ext.maintenanceShell'] = array(
-	'scripts' => 'resources/ext.maintenanceShell.js',
-	'styles' => 'resources/ext.maintenanceShell.css',
-	'localBasePath' => $dir,
-	'remoteExtPath' => 'MaintenanceShell',
-	'dependencies' => 'jquery.spinner'
-);
-
-// Not granted to anyone by default.
-// To grant to "developer" group, use:
-// $wgGroupPermissions['developer']['maintenanceshell'] = true;
-// Or create a new user group, use:
-// $wgGroupPermissions['maintainer']['maintenanceshell'] = true;
-
-/* Configuration */
-
-$wgMaintenanceShellPath = false;
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'MaintenanceShell' );
+	wfWarn(
+		'Deprecated PHP entry point used for MaintenanceShell extension. Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);
+} else {
+	die( 'This version of the MaintenanceShell extension requires MediaWiki 1.25+' );
+}
