@@ -30,7 +30,6 @@ $wgAutoloadClasses['MaintenanceShellHooks'] = $dir . '/MaintenanceShell.hooks.ph
 $wgAutoloadClasses['SpecialMaintenanceShell'] = $dir . '/includes/SpecialMaintenanceShell.php';
 $wgAutoloadClasses['MaintenanceShellArgumentsParser'] = $dir . '/includes/MaintenanceShellArgumentsParser.php';
 $wgMessagesDirs['MaintenanceShell'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['MaintenanceShell'] = $dir . '/MaintenanceShell.i18n.php';
 $wgExtensionMessagesFiles['MaintenanceShellAlias'] = $dir . '/MaintenanceShell.alias.php';
 
 // Register special pages
