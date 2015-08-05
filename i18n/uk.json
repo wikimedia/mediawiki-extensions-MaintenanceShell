@@ -4,8 +4,11 @@
 			"Ата"
 		]
 	},
+	"maintenanceshell": "Мушля техпідтримки",
 	"maintenanceshell-desc": "Вікіінтерфейс для скриптів підтримки",
 	"right-maintenanceshell": "Виконання скриптів підтримки",
+	"action-maintenanceshell": "запуск мушлі техпідтримки",
+	"maintenanceshell-legend": "Мушля техпідтримки",
 	"maintenanceshell-text": "<strong>Застереження:</strong> Використовуйте ці скрипти обережно. Вони призначені лише для розробників.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "Повернутися до [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Скрипт не знайдено",
