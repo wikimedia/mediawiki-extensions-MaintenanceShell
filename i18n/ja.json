@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Otokoume"
+		]
+	},
+	"maintenanceshell": "メンテナンスシェル",
+	"maintenanceshell-desc": "メンテナンススクリプトのウィキインターフェース",
+	"right-maintenanceshell": "メンテナンススクリプトを実行",
+	"action-maintenanceshell": "メンテナンスシェルを実行",
+	"maintenanceshell-legend": "メンテナンスシェル",
+	"maintenanceshell-text": "<strong>警告:</strong> 注意を払ってこれらのスクリプトを使用してください。これは開発者のみを対象としています。\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-return": "[[{{#special:maintenanceshell}}]] に戻る",
+	"maintenanceshell-error-scriptname": "スクリプトが見つかりません",
+	"maintenanceshell-error-rawsubmit": "セキュリティ上の理由から、このページは JavaScript が動作できる状態でなければいけません。",
+	"maintenanceshell-available": "利用可能なメンテナンススクリプト:",
+	"maintenanceshell-field-scriptname": "スクリプト名:",
+	"maintenanceshell-field-args": "コマンドラインオプション:",
+	"maintenanceshell-field-submit": "スクリプトを実行"
+}
