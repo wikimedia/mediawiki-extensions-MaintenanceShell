@@ -1,8 +1,7 @@
 {
-    "@metadata": {
-        "authors": [
-            "kghbln"
-        ]
-    },
-    "maintenanceshell-warning": "'''Achtung:''' Setzen Sie diese Skripte sorgfältig ein. Dies wird zudem nur Systemadministratoren und fortgeschrittenen Nutzern empfohlen."
+	"@metadata": {
+		"authors": [
+			"kghbln"
+		]
+	}
 }
