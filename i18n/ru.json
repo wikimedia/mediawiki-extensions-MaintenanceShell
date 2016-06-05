@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Okras"
+		]
+	},
+	"maintenanceshell-return": "Вернуться на [[{{#special:maintenanceshell}}]].",
+	"maintenanceshell-error-scriptname": "Скрипт не найден",
+	"maintenanceshell-field-submit": "Запустить скрипт"
+}
