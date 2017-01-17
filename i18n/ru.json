@@ -1,10 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
-			"Okras"
+			"Okras",
+			"Mailman"
 		]
 	},
+	"right-maintenanceshell": "запуск обслуживающих скриптов",
+	"action-maintenanceshell": "запуск обслуживающих скриптов",
+	"maintenanceshell-text": "<strong>Внимание!</strong> Используйте эти скрипты с осторожностью, поскольку они предназначены для разработчиков.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "Вернуться на [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Скрипт не найден",
+	"maintenanceshell-error-rawsubmit": "В целях безопасности, на этой странице должен быть доступен JavaScript.",
+	"maintenanceshell-available": "Доступные скрипты:",
+	"maintenanceshell-field-scriptname": "Название скрипта:",
+	"maintenanceshell-field-args": "Параметры командной строки:",
 	"maintenanceshell-field-submit": "Запустить скрипт"
 }
