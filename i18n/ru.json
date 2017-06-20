@@ -2,11 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Okras",
-			"Mailman"
+			"Mailman",
+			"Facenapalm"
 		]
 	},
+	"maintenanceshell": "Панель управления",
+	"maintenanceshell-desc": "Вики-интерфейс к управляющим скриптам",
 	"right-maintenanceshell": "запуск обслуживающих скриптов",
 	"action-maintenanceshell": "запуск обслуживающих скриптов",
+	"maintenanceshell-legend": "Панель управления",
 	"maintenanceshell-text": "<strong>Внимание!</strong> Используйте эти скрипты с осторожностью, поскольку они предназначены для разработчиков.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "Вернуться на [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Скрипт не найден",
