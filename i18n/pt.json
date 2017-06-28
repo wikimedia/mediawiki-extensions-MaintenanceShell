@@ -1,8 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Hamilton Abreu"
 		]
 	},
-	"maintenanceshell-field-scriptname": "Nome do script:"
+	"maintenanceshell": "Shell de Manutenção",
+	"maintenanceshell-desc": "Interface da wiki para ''scripts'' de manutenção",
+	"right-maintenanceshell": "Executar ''scripts'' de manutenção",
+	"action-maintenanceshell": "executar a shell de manutenção",
+	"maintenanceshell-legend": "Shell de manutenção",
+	"maintenanceshell-text": "<strong>Aviso:</strong> Utilize estes ''scripts'' com cuidado. Eles estão destinados só para programadores.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-return": "Voltar a [[{{#special:maintenanceshell}}]].",
+	"maintenanceshell-error-scriptname": "O ''script'' não foi encontrado",
+	"maintenanceshell-error-rawsubmit": "For motivos de segurança, esta página requer que o JavaScript esteja ativado.",
+	"maintenanceshell-available": "''Scripts'' de manutenção disponíveis:",
+	"maintenanceshell-field-scriptname": "Nome do ''script'':",
+	"maintenanceshell-field-args": "Opções da linha de comandos:",
+	"maintenanceshell-field-submit": "Executar o ''script''"
 }
