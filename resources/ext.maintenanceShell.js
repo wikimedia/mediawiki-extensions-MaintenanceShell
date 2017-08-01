@@ -18,6 +18,7 @@
 			.end()
 		.find( 'form' )
 			.on( 'submit', function ( e ) {
+				// jscs:disable requireVarDeclFirst
 				// We're going the ajax way!
 				e.preventDefault();
 
@@ -29,6 +30,8 @@
 					$inputs = $form.find( ':input' ), // select, input, textarea, button
 					$wrap = $form.closest( '.mw-sp-maintenanceShell' ),
 					$shell = $wrap.find( '.mw-sp-maintenanceShell-shell' ).empty();
+				// jscs:enable requireVarDeclFirst
+
 				if ( !$shell.length ) {
 					$shell = $( '<div>' ).addClass( 'mw-sp-maintenanceShell-shell' ).appendTo( $wrap );
 				}
