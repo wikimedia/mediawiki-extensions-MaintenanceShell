@@ -10,15 +10,24 @@ module.exports = function ( grunt ) {
 			options: {
 				jshintrc: true
 			},
-			all: '.'
+			all: [
+				'*.js',
+				'!node_modules/**',
+				'!vendor/**'
+			]
 		},
 		jscs: {
-			src: '.'
+			src: [
+				'*.js',
+				'!node_modules/**',
+				'!vendor/**'
+			]
 		},
 		jsonlint: {
 			all: [
 				'**/*.json',
-				'!node_modules/**'
+				'!node_modules/**',
+				'!vendor/**'
 			]
 		},
 		banana: {
