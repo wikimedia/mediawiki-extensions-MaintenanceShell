@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * Special page interface for Maintenance Shell.
  *
@@ -163,7 +165,7 @@ class SpecialMaintenanceShell extends FormSpecialPage {
 				DeferredUpdates::doUpdates( 'commit' );
 
 				// Close up pending commits
-				$factory = wfGetLBFactory();
+				$factory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
 				$factory->commitMasterChanges();
 				$factory->shutdown();
 			} catch ( MWException $mwe ) {
