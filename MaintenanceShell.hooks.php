@@ -20,7 +20,4 @@ class MaintenanceShellHooks {
 		}
 	}
 
-	public static function onUnitTestsList( Array &$files ) {
-		$files[] = __DIR__ . '/tests/MaintenanceShellArgumentsParserTest.php';
-	}
 }
