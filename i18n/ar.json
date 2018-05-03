@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"ديفيد"
+		]
+	},
+	"maintenanceshell": "قشرة الصيانة",
+	"maintenanceshell-desc": "واجهة ويكي لسكريبتات الصيانة",
+	"right-maintenanceshell": "تنفيذ سكريبتات الصيانة",
+	"action-maintenanceshell": "تنفيذ قشرة الصيانة",
+	"maintenanceshell-legend": "قشرة الصيانة",
+	"maintenanceshell-text": "<strong>تحذير:</strong>استخدم هذه البرامج النصية بعناية، وهي مخصصة للمطورين فقط:\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts دليل:سكريبتات الصيانة]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell امتداد:قشرة الصيانة]",
+	"maintenanceshell-return": "ارجع إلى [[{{#special:maintenanceshell}}]].",
+	"maintenanceshell-error-scriptname": "السكريبت غير موجود",
+	"maintenanceshell-error-rawsubmit": "لأسباب تتعلق بالأمان; تتطلب هذه الصفحة تمكين جافا سكريبت.",
+	"maintenanceshell-available": "سكريبتات الصيانة المتاحة:",
+	"maintenanceshell-field-scriptname": "اسم السكريبت:",
+	"maintenanceshell-field-args": "خيارات سطر الأوامر:",
+	"maintenanceshell-field-submit": "تشغيل السكريبت"
+}
