@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Octahedron80"
+		]
+	},
+	"maintenanceshell": "เชลล์บำรุงรักษา",
+	"maintenanceshell-desc": "อินเทอร์เฟซวิกิสำหรับสคริปต์บำรุงรักษา",
+	"right-maintenanceshell": "กระทำการสคริปต์บำรุงรักษา",
+	"action-maintenanceshell": "กระทำการเชลล์บำรุงรักษา",
+	"maintenanceshell-legend": "เชลล์บำรุงรักษา",
+	"maintenanceshell-text": "<strong>คำเตือน:</strong> ใช้สคริปต์เหล่านี้อย่างระมัดระวัง พวกมันมีไว้ให้นักพัฒนาใช้เท่านั้น\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts คู่มือ:สคริปต์บำรุงรักษา]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell ส่วนขยาย:เชลล์บำรุงรักษา]",
+	"maintenanceshell-return": "กลับไปยัง [[{{#special:maintenanceshell}}]]",
+	"maintenanceshell-error-scriptname": "ไม่พบสคริปต์",
+	"maintenanceshell-error-rawsubmit": "ด้วยเหตุผลด้านความปลอดภัย หน้านี้จำเป็นต้องเปิดใช้งานจาวาสคริปต์",
+	"maintenanceshell-available": "สคริปต์บำรุงรักษาที่ใช้ได้:",
+	"maintenanceshell-field-scriptname": "ชื่อสคริปต์:",
+	"maintenanceshell-field-args": "ตัวเลือกบนบรรทัดคำสั่ง:",
+	"maintenanceshell-field-submit": "ดำเนินงานสคริปต์"
+}
