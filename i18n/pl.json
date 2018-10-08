@@ -1,12 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrumps"
+			"Chrumps",
+			"Railfail536"
 		]
 	},
+	"maintenanceshell": "Powłoka konserwacyjna",
 	"maintenanceshell-desc": "Interfejs wiki do zarządzania skryptami",
+	"right-maintenanceshell": "Uruchamianie skryptów konserwacyjnych",
+	"action-maintenanceshell": "uruchamiania skryptów konserwacyjnych",
+	"maintenanceshell-legend": "Powłoka konserwacyjna",
+	"maintenanceshell-text": "<strong>Uwaga:</strong> Używaj tych skryptów z rozwagą. Są przeznaczone wyłącznie dla programistów.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts Podręcznik:Skrypty konserwacyjne]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell Rozszerzenie:MaintenanceShell]",
 	"maintenanceshell-return": "Powrót do [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Nie znaleziono skryptu",
+	"maintenanceshell-error-rawsubmit": "Ze względów bezpieczeństwa, ta strona wymaga włączenia kodu JavaScript.",
+	"maintenanceshell-available": "Dostępne skrypty konserwacyjne:",
 	"maintenanceshell-field-scriptname": "Nazwa skryptu:",
 	"maintenanceshell-field-args": "Opcje linii poleceń:",
 	"maintenanceshell-field-submit": "Uruchom skrypt"
