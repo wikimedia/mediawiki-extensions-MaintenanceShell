@@ -61,6 +61,7 @@ class SpecialMaintenanceShell extends FormSpecialPage {
 	}
 
 	protected function alterForm( HTMLForm $form ) {
+		$form->setWrapperLegendMsg( 'maintenanceshell-legend' );
 		$form->setSubmitTextMsg( 'maintenanceshell-field-submit' );
 		/* Control field to prevent accidential submissions
 		 * in browsers without javascript support.
@@ -175,6 +176,10 @@ class SpecialMaintenanceShell extends FormSpecialPage {
 
 		// If the script doesn't explictly exit, we'll exit anyway
 		exit;
+	}
+
+	protected function getDisplayFormat() {
+		return 'ooui';
 	}
 
 	protected function getGroupName() {
