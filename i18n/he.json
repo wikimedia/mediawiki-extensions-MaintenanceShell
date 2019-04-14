@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Guycn2"
+			"Guycn2",
+			"Amire80"
 		]
 	},
+	"maintenanceshell": "מסוף תחזוקה",
 	"right-maintenanceshell": "הפעלת סקריפטים לתחזוקה",
-	"action-maintenanceshell": "להפעיל סקריפטים לתחזוקה"
+	"action-maintenanceshell": "להפעיל מסוף תחזוקה"
 }
