@@ -4,5 +4,17 @@
 			"Joetaras"
 		]
 	},
-	"maintenanceshell-field-scriptname": "Nome d'u script:"
+	"maintenanceshell": "Shell de manutenzione",
+	"maintenanceshell-desc": "Inderfacce uicchi pe le script de manutenzione",
+	"right-maintenanceshell": "Lange le script de manutenzione",
+	"action-maintenanceshell": "lange 'a shell de manutenzione",
+	"maintenanceshell-legend": "Shell de manutenzione",
+	"maintenanceshell-text": "<strong>Iapre l'uecchije:</strong> Va belle belle quanne ause ste sacript. So fatte sulamende pe le sveluppature.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Script de manutenzione]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-return": "Tuèrne a [[{{#special:maintenanceshell}}]].",
+	"maintenanceshell-error-scriptname": "Script non acchiate",
+	"maintenanceshell-error-rawsubmit": "Pe mutive de securezze, sta èàgene vole ca JavaScript adda essere abbilitate.",
+	"maintenanceshell-available": "Script de manutenzione disponibbele:",
+	"maintenanceshell-field-scriptname": "Nome d'u script:",
+	"maintenanceshell-field-args": "Opziune d'a linèe de comande:",
+	"maintenanceshell-field-submit": "Lange 'u script"
 }
