@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"maintenanceshell-desc": "Wikisučelje za skripte za održavanje",
+	"right-maintenanceshell": "Pokretanje skripti za održavanje",
+	"action-maintenanceshell": "pokretanje skripte za održavanje",
+	"maintenanceshell-return": "Nazad na [[{{#special:maintenanceshell}}]].",
+	"maintenanceshell-error-scriptname": "Skripta nije pronađena",
+	"maintenanceshell-error-rawsubmit": "Iz sigurosnih razloga, stranica zahtijeva da imate omogućen JavaScript.",
+	"maintenanceshell-available": "Raspoložive skripte za održavanje:"
+}
