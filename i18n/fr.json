@@ -2,14 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Benjozork",
-			"Gomoko"
+			"Gomoko",
+			"Urhixidur"
 		]
 	},
-	"maintenanceshell": "Shell de maintenance",
+	"maintenanceshell": "Interpréteur de maintenance",
 	"maintenanceshell-desc": "Interface wiki pour les scripts de maintenance",
 	"right-maintenanceshell": "Lancer les scripts de maintenance",
-	"action-maintenanceshell": "exécuter le shell de maintenance",
-	"maintenanceshell-legend": "Shell de maintenance",
+	"action-maintenanceshell": "exécuter l’interpréteur de maintenance",
+	"maintenanceshell-legend": "Interpréteur de maintenance",
 	"maintenanceshell-text": "<strong>Avertissement:</strong> Utilisez ces scripts avec soin. Ils sont destinés aux développeurs uniquement.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "Retour à [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Script introuvable",
