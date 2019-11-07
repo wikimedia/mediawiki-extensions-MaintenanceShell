@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"maintenanceshell": "Vedlikeholdsskall",
+	"maintenanceshell-desc": "Wikigrensesnitt for vedlikeholdsskript",
+	"right-maintenanceshell": "Kjøre vedlikeholdsskript",
+	"action-maintenanceshell": "kjøre vedlikeholdsskallet",
+	"maintenanceshell-legend": "Vedlikeholdsskall",
+	"maintenanceshell-text": "<strong>Advarsel:</strong> Bruk disse skriptene forsiktig. De er påtenkt utviklere.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-return": "Tilbake til [[{{#special:maintenanceshell}}]].",
+	"maintenanceshell-error-scriptname": "Skript ikke funnet",
+	"maintenanceshell-error-rawsubmit": "Av sikkerhetsgrunner krever denne siden at JavaScript er slått på.",
+	"maintenanceshell-available": "Tilgjengelige vedlikeholdsskript:",
+	"maintenanceshell-field-scriptname": "Skriptnavn:",
+	"maintenanceshell-field-args": "Kommandolinjealternativer:",
+	"maintenanceshell-field-submit": "Kjør skript"
+}
