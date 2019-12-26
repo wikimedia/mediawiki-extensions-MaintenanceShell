@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"maintenanceshell": "Bakım Kabuğu",
+	"maintenanceshell-desc": "Bakım betikleri için wiki arabirimi",
+	"right-maintenanceshell": "Bakım betikleri yürüt",
+	"action-maintenanceshell": "bakım kabuğunu çalıştır",
+	"maintenanceshell-legend": "Bakım Kabuğu",
+	"maintenanceshell-text": "<strong>Uyarı:</strong> Bu betikleri dikkatli kullanın. Yalnızca geliştiriciler içindir.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manüel:Bakım betikleri]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Uzantı:MaintenanceShell]",
+	"maintenanceshell-return": "[[{{#special:maintenanceshell}}]] geri dön.",
+	"maintenanceshell-error-scriptname": "Betik bulunamadı",
+	"maintenanceshell-error-rawsubmit": "Güvenlik nedeniyle, bu sayfa JavaScript'in etkinleştirilmesini gerektirir.",
+	"maintenanceshell-available": "Mevcut bakım betikleri:",
+	"maintenanceshell-field-scriptname": "Betik adı:",
+	"maintenanceshell-field-args": "Komut satırı seçenekleri:",
+	"maintenanceshell-field-submit": "Betik çalıştır"
+}
