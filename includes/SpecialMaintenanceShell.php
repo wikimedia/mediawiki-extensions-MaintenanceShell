@@ -163,7 +163,7 @@ class SpecialMaintenanceShell extends FormSpecialPage {
 				$maintenance->globals();
 
 				// Perform deferred updates
-				DeferredUpdates::doUpdates( 'commit' );
+				DeferredUpdates::doUpdates();
 
 				// Close up pending commits
 				$factory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
