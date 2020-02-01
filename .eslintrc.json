@@ -1,0 +1,18 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client",
+		"wikimedia/jquery"
+	],
+	"globals": {
+		"mw": false,
+		"jQuery": false
+	},
+	"rules": {
+		"no-jquery/no-global-selector": "warn",
+		"no-jquery/no-trim": "warn",
+		"no-jquery/no-parse-html-literal": "warn",
+		"vars-on-top": "warn",
+		"no-jquery/no-sizzle": "off"
+	}
+}

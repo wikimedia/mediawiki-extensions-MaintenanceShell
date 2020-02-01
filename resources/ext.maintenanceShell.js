@@ -10,15 +10,14 @@
 
 	function init( $pageWrap ) {
 		$pageWrap
-		.find( '.mw-sp-maintenanceShell-controlfield' )
+			.find( '.mw-sp-maintenanceShell-controlfield' )
 			.val( '1' )
 			.end()
-		.find( 'select[name="wpScript"]' )
+			.find( 'select[name="wpScript"]' )
 			.prop( 'required', true )
 			.end()
-		.find( 'form' )
+			.find( 'form' )
 			.on( 'submit', function ( e ) {
-				// jscs:disable requireVarDeclFirst
 				// We're going the ajax way!
 				e.preventDefault();
 
@@ -30,7 +29,6 @@
 					$inputs = $form.find( ':input' ), // select, input, textarea, button
 					$wrap = $form.closest( '.mw-sp-maintenanceShell' ),
 					$shell = $wrap.find( '.mw-sp-maintenanceShell-shell' ).empty();
-				// jscs:enable requireVarDeclFirst
 
 				if ( !$shell.length ) {
 					$shell = $( '<div>' ).addClass( 'mw-sp-maintenanceShell-shell' ).appendTo( $wrap );
@@ -56,12 +54,12 @@
 
 				// Submission
 				$.ajax( {
-						type: $form.attr( 'method' ) || 'POST',
-						url:  $form.attr( 'action' ) || '',
-						data: postData,
-						cache: false,
-						dataType: 'text'
-					} )
+					type: $form.attr( 'method' ) || 'POST',
+					url: $form.attr( 'action' ) || '',
+					data: postData,
+					cache: false,
+					dataType: 'text'
+				} )
 					.done( function ( data ) {
 						// In case of error, the server will respond with a full html page.
 						// Extract the SpecialPage wrapper, and replace our current one to show the error.
@@ -82,7 +80,6 @@
 						$inputs.prop( 'disabled', false );
 						$spinner.remove();
 					} );
-
 			} );
 	}
 
