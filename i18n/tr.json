@@ -5,11 +5,11 @@
 		]
 	},
 	"maintenanceshell": "Bakım Kabuğu",
-	"maintenanceshell-desc": "Bakım betikleri için wiki arabirimi",
+	"maintenanceshell-desc": "Bakım betikleri için viki arabirimi",
 	"right-maintenanceshell": "Bakım betikleri yürüt",
 	"action-maintenanceshell": "bakım kabuğunu çalıştır",
 	"maintenanceshell-legend": "Bakım Kabuğu",
-	"maintenanceshell-text": "<strong>Uyarı:</strong> Bu betikleri dikkatli kullanın. Yalnızca geliştiriciler içindir.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manüel:Bakım betikleri]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Uzantı:MaintenanceShell]",
+	"maintenanceshell-text": "<strong>Uyarı:</strong> Bu betikleri dikkatli kullanın. Yalnızca geliştiriciler içindir.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts/tr Manual:Bakım betikleri]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell/tr Extension:MaintenanceShell]",
 	"maintenanceshell-return": "[[{{#special:maintenanceshell}}]] geri dön.",
 	"maintenanceshell-error-scriptname": "Betik bulunamadı",
 	"maintenanceshell-error-rawsubmit": "Güvenlik nedeniyle, bu sayfa JavaScript'in etkinleştirilmesini gerektirir.",
