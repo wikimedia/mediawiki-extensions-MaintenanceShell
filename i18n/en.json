@@ -9,7 +9,7 @@
 	"right-maintenanceshell": "Execute maintenance scripts",
 	"action-maintenanceshell": "execute the maintenance shell",
 	"maintenanceshell-legend": "Maintenance Shell",
-	"maintenanceshell-text": "<strong>Warning:</strong> Use these scripts with care. They are intended for developers only.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-text": "<strong>Warning:</strong> Use these scripts with care. They are intended for developers only.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "Return to [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Script not found",
 	"maintenanceshell-error-rawsubmit": "For security reasons, this page requires JavaScript to be enabled.",
