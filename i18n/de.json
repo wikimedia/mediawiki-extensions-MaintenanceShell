@@ -11,7 +11,7 @@
 	"right-maintenanceshell": "Wartungsskripte über die Wartungs-Shell ausführen.",
 	"action-maintenanceshell": "die Wartungsshell auszuführen",
 	"maintenanceshell-legend": "Wartungsshell",
-	"maintenanceshell-text": "<strong>Warnung:</strong> Benutze diese Skripte mit Vorsicht. Sie sind nur für Entwickler gedacht.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts/de Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-text": "<strong>Warnung:</strong> Benutze diese Skripte mit Vorsicht. Sie sind nur für Entwickler gedacht.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts/de Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "Rückkehr zu [[{{#special:maintenanceshell}}]]",
 	"maintenanceshell-error-scriptname": "Skript nicht gefunden",
 	"maintenanceshell-error-rawsubmit": "Aus Sicherheitsgründen erfordert diese Seite aktiviertes JavaScript.",

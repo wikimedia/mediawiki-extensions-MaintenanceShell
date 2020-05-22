@@ -9,7 +9,7 @@
 	"right-maintenanceshell": "Пуштање скрипти за одржување",
 	"action-maintenanceshell": "пуштање на скриптата за одржување",
 	"maintenanceshell-legend": "Лушпа за одржување",
-	"maintenanceshell-text": "<strong>Предупредување:</strong> Внимавајте при употребата на скриптиве. Предвидени се само за програмери.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-text": "<strong>Предупредување:</strong> Внимавајте при употребата на скриптиве. Предвидени се само за програмери.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "Назад на [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Скриптата не е пронајдена",
 	"maintenanceshell-error-rawsubmit": "Од безбедносни причини, страницата бара да имате овозможено JavaScript.",

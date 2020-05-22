@@ -11,7 +11,7 @@
 	"right-maintenanceshell": "執行維護腳本",
 	"action-maintenanceshell": "執行維護 Shell",
 	"maintenanceshell-legend": "維護 Shell",
-	"maintenanceshell-text": "<strong>警告：</strong>請小心使用腳本。它們僅供於開發人員使用。\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts 手冊：維護腳本]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell 擴充：維護 Shell]",
+	"maintenanceshell-text": "<strong>警告：</strong>請小心使用腳本。它們僅供於開發人員使用。\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts 手冊：維護腳本]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell 擴充：維護 Shell]",
 	"maintenanceshell-return": "返回至 [[{{#special:maintenanceshell}}]]。",
 	"maintenanceshell-error-scriptname": "找不到腳本",
 	"maintenanceshell-error-rawsubmit": "基於安全因素，此頁面需要啟用 JavaScript。",

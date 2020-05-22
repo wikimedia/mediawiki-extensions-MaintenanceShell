@@ -9,7 +9,7 @@
 	"right-maintenanceshell": "กระทำการสคริปต์บำรุงรักษา",
 	"action-maintenanceshell": "กระทำการเชลล์บำรุงรักษา",
 	"maintenanceshell-legend": "เชลล์บำรุงรักษา",
-	"maintenanceshell-text": "<strong>คำเตือน:</strong> ใช้สคริปต์เหล่านี้อย่างระมัดระวัง พวกมันมีไว้ให้นักพัฒนาใช้เท่านั้น\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts คู่มือ:สคริปต์บำรุงรักษา]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell ส่วนขยาย:เชลล์บำรุงรักษา]",
+	"maintenanceshell-text": "<strong>คำเตือน:</strong> ใช้สคริปต์เหล่านี้อย่างระมัดระวัง พวกมันมีไว้ให้นักพัฒนาใช้เท่านั้น\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts คู่มือ:สคริปต์บำรุงรักษา]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell ส่วนขยาย:เชลล์บำรุงรักษา]",
 	"maintenanceshell-return": "กลับไปยัง [[{{#special:maintenanceshell}}]]",
 	"maintenanceshell-error-scriptname": "ไม่พบสคริปต์",
 	"maintenanceshell-error-rawsubmit": "ด้วยเหตุผลด้านความปลอดภัย หน้านี้จำเป็นต้องเปิดใช้งานจาวาสคริปต์",

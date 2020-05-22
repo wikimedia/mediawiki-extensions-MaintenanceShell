@@ -9,7 +9,7 @@
 	"right-maintenanceshell": "Executar scripts de mantenimientu",
 	"action-maintenanceshell": "executar la consola de mantenimientu",
 	"maintenanceshell-legend": "Consola de mantenimientu",
-	"maintenanceshell-text": "<strong>Avisu:</strong> Usa estos scripts con cuidáu. Tán dirixíos únicamente a desendolcadores.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Scripts de mantenimientu]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-text": "<strong>Avisu:</strong> Usa estos scripts con cuidáu. Tán dirixíos únicamente a desendolcadores.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts Manual:Scripts de mantenimientu]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "Volver a [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Nun s'alcontró el script.",
 	"maintenanceshell-error-rawsubmit": "Por motivos de seguridá, esta páxina rique JavaScript pa tar activa.",

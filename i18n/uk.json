@@ -10,7 +10,7 @@
 	"right-maintenanceshell": "Виконання скриптів технічного обслуговування",
 	"action-maintenanceshell": "виконання оболонки технічного обслуговування",
 	"maintenanceshell-legend": "Мушля техпідтримки",
-	"maintenanceshell-text": "<strong>Застереження:</strong> Використовуйте ці скрипти обережно. Вони призначені лише для розробників.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-text": "<strong>Застереження:</strong> Використовуйте ці скрипти обережно. Вони призначені лише для розробників.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "Повернутися до [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Скрипт не знайдено",
 	"maintenanceshell-error-rawsubmit": "З міркувань безпеки ця сторінка вимагає увімкнути JavaScript.",

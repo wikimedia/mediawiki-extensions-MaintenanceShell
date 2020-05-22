@@ -9,7 +9,7 @@
 	"right-maintenanceshell": "Karbantartó-szkriptek futtatása",
 	"action-maintenanceshell": "karbantartó héj futtatása",
 	"maintenanceshell-legend": "Karbantartó héj",
-	"maintenanceshell-text": "<strong>Figyelmeztetés:</strong> Figyelj oda a szkriptek használatakor. Ezek fejlesztők számára készültek.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Kézikönyv:Karbantartó-szkriptek]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Kiterjesztés:MaintenanceShell]",
+	"maintenanceshell-text": "<strong>Figyelmeztetés:</strong> Figyelj oda a szkriptek használatakor. Ezek fejlesztők számára készültek.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts Kézikönyv:Karbantartó-szkriptek]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell Kiterjesztés:MaintenanceShell]",
 	"maintenanceshell-return": "Vissza a [[{{#special:maintenanceshell}}]]hoz.",
 	"maintenanceshell-error-scriptname": "A szkript nem található",
 	"maintenanceshell-error-rawsubmit": "Biztonsági okokból engedélyezned kell a JavaScriptet.",

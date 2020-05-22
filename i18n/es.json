@@ -5,7 +5,7 @@
 			"Ryo567"
 		]
 	},
-	"maintenanceshell-text": "<strong>Advertencia:</strong> usa con cuidado estos «scripts». Están destinados solo a desarrolladores.\n* [https://www.mediawiki.org/wiki/Manual:Maintenance_scripts Manual:Scripts de mantenimiento]\n* [https://www.mediawiki.org/wiki/Extension:MaintenanceShell Extensión:MaintenanceShell]",
+	"maintenanceshell-text": "<strong>Advertencia:</strong> usa con cuidado estos «scripts». Están destinados solo a desarrolladores.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts Manual:Scripts de mantenimiento]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell Extensión:MaintenanceShell]",
 	"maintenanceshell-return": "Volver a [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "No se encontró la secuencia de órdenes",
 	"maintenanceshell-error-rawsubmit": "Por motivos de seguridad, esta página requiere JavaScript para activarse.",
