@@ -12,7 +12,6 @@
 		"no-jquery/no-global-selector": "warn",
 		"no-jquery/no-trim": "warn",
 		"no-jquery/no-parse-html-literal": "warn",
-		"vars-on-top": "warn",
 		"no-jquery/no-sizzle": "off"
 	}
 }
