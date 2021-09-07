@@ -167,7 +167,7 @@ class SpecialMaintenanceShell extends FormSpecialPage {
 
 				// Close up pending commits
 				$factory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
-				$factory->commitMasterChanges();
+				$factory->commitPrimaryChanges();
 				$factory->shutdown();
 			} catch ( MWException $mwe ) {
 				echo $mwe->getText();
