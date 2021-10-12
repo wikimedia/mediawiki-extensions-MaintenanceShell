@@ -1,6 +1,6 @@
 <?php
 
-class MaintenanceShellArgumentsParserTest extends MediaWikiTestCase {
+class MaintenanceShellArgumentsParserTest extends MediaWikiIntegrationTestCase {
 
 	public static function provideArguments() {
 		return array(
