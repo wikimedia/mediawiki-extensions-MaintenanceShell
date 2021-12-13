@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Otokoume"
+			"Otokoume",
+			"Shirayuki"
 		]
 	},
 	"maintenanceshell": "メンテナンスシェル",
 	"maintenanceshell-desc": "メンテナンススクリプトのウィキインターフェース",
 	"right-maintenanceshell": "メンテナンススクリプトを実行",
-	"action-maintenanceshell": "メンテナンスシェルを実行",
+	"action-maintenanceshell": "メンテナンスシェルの実行",
 	"maintenanceshell-legend": "メンテナンスシェル",
 	"maintenanceshell-text": "<strong>警告:</strong> 注意を払ってこれらのスクリプトを使用してください。これは開発者のみを対象としています。\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "[[{{#special:maintenanceshell}}]] に戻る",

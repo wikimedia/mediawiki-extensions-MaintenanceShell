@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"MuratTheTurkish"
 		]
 	},
 	"maintenanceshell": "Bakım Kabuğu",
-	"maintenanceshell-desc": "Bakım betikleri için viki arabirimi",
+	"maintenanceshell-desc": "Bakım betikleri için viki arayüzü",
 	"right-maintenanceshell": "Bakım betikleri yürüt",
 	"action-maintenanceshell": "bakım kabuğunu çalıştır",
 	"maintenanceshell-legend": "Bakım Kabuğu",
