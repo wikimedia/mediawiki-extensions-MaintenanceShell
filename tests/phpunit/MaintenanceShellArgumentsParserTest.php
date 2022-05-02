@@ -84,7 +84,7 @@ class MaintenanceShellArgumentsParserTest extends MediaWikiIntegrationTestCase {
 			array(
 				'"foo""bar"\'quux\'',
 				array( 'foobarquux' ),
-				'Quotes only provide wrapping context, they are not value seperators'
+				'Quotes only provide wrapping context, they are not value separators'
 			),
 			array(
 				' path/to/something\ in/this\ directory.png  --baz="quux"  -abc="c++"  -d  e --  -f "' . "line\nbreak". '" ',
