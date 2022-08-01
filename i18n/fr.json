@@ -3,7 +3,8 @@
 		"authors": [
 			"Benjozork",
 			"Gomoko",
-			"Urhixidur"
+			"Urhixidur",
+			"Verdy p"
 		]
 	},
 	"maintenanceshell": "Interpréteur de maintenance",
@@ -11,7 +12,7 @@
 	"right-maintenanceshell": "Lancer les scripts de maintenance",
 	"action-maintenanceshell": "exécuter l’interpréteur de maintenance",
 	"maintenanceshell-legend": "Interpréteur de maintenance",
-	"maintenanceshell-text": "<strong>Avertissement:</strong> Utilisez ces scripts avec soin. Ils sont destinés aux développeurs uniquement.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-text": "<strong>Avertissement :</strong> utilisez les scripts suivants avec précaution. Ils sont destinés aux développeurs uniquement.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "Retour à [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Script introuvable",
 	"maintenanceshell-error-rawsubmit": "Pour des raisons de sécurité, cette page nécessite l'activation de JavaScript.",
