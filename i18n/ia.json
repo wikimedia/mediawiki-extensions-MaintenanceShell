@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"maintenanceshell": "Interfacie de mantenentia",
+	"maintenanceshell-desc": "Interfacie wiki pro scripts de mantenentia",
+	"right-maintenanceshell": "Executar scripts de mantenentia",
+	"action-maintenanceshell": "usar le interfacie de mantenentia",
+	"maintenanceshell-legend": "Interfacie de mantenentia",
+	"maintenanceshell-text": "<strong>Attention:</strong> Usa iste scripts con cura. Illos es destinate solo al disveloppatores.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts Manual: Scripts de mantenentia]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell Extension: Interfacie de mantenentia]",
+	"maintenanceshell-return": "Retornar a [[{{#special:maintenanceshell}}]].",
+	"maintenanceshell-error-scriptname": "Script non trovate",
+	"maintenanceshell-error-rawsubmit": "Pro motivos de securitate, iste pagina require que JavaScript es activate.",
+	"maintenanceshell-available": "Scripts de mantenentia disponibile:",
+	"maintenanceshell-field-scriptname": "Nomine del script:",
+	"maintenanceshell-field-args": "Optiones del linea de commando:",
+	"maintenanceshell-field-submit": "Executar script"
+}
