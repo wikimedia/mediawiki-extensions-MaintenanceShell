@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * @covers MaintenanceShellArgumentsParser
+ */
 class MaintenanceShellArgumentsParserTest extends MediaWikiIntegrationTestCase {
 
 	public static function provideArguments() {
