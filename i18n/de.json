@@ -3,11 +3,12 @@
 		"authors": [
 			"Kghbln",
 			"Metalhead64",
-			"kghbln"
+			"kghbln",
+			"Brettchenweber"
 		]
 	},
 	"maintenanceshell": "Wartungs-Shell",
-	"maintenanceshell-desc": "Erweitert das Wiki um eine eine Spezialseite mit der Wartungsskripte zur Systemadministration ausgeführt werden können",
+	"maintenanceshell-desc": "Erweitert das Wiki um eine eine Spezialseite, mit der Wartungsskripte zur Systemadministration ausgeführt werden können",
 	"right-maintenanceshell": "Wartungsskripte über die Wartungs-Shell ausführen.",
 	"action-maintenanceshell": "die Wartungsshell auszuführen",
 	"maintenanceshell-legend": "Wartungsshell",
