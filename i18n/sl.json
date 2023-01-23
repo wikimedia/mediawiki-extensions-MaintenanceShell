@@ -4,6 +4,17 @@
 			"Eleassar"
 		]
 	},
+	"maintenanceshell": "Vzdrževalna lupina",
+	"maintenanceshell-desc": "Viki vmesnik za vzdrževalne skripte",
+	"right-maintenanceshell": "Izvajanje vzdrževalnih skriptov",
+	"action-maintenanceshell": "izvajanje vzdrževalne lupine",
+	"maintenanceshell-legend": "Vzdrževalna lupina",
+	"maintenanceshell-text": "<strong>Opozorilo:</strong> Te skripte uporabljajte previdno. Namenjeni so samo razvijalcem.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org /wiki/Special:MyLanguage/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-return": "Nazaj na [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Skript ni bil najden",
-	"maintenanceshell-error-rawsubmit": "Ta stran iz varnostnih razlogov zahteva, da je omogočen JavaScript."
+	"maintenanceshell-error-rawsubmit": "Ta stran iz varnostnih razlogov zahteva, da je omogočen JavaScript.",
+	"maintenanceshell-available": "Razpoložljivi vzdrževalni skripti:",
+	"maintenanceshell-field-scriptname": "Ime skripta:",
+	"maintenanceshell-field-args": "Možnosti ukazne vrstice:",
+	"maintenanceshell-field-submit": "Zaženi skript"
 }
