@@ -13,7 +13,7 @@
 	"maintenanceshell-return": "Назад на [[{{#special:maintenanceshell}}]].",
 	"maintenanceshell-error-scriptname": "Скриптата не е пронајдена",
 	"maintenanceshell-error-rawsubmit": "Од безбедносни причини, страницата бара да имате овозможено JavaScript.",
-	"maintenanceshell-available": "Расположиви скрипти за одржување:",
+	"maintenanceshell-available": "Расположливи скрипти за одржување:",
 	"maintenanceshell-field-scriptname": "Име на скриптата:",
 	"maintenanceshell-field-args": "Можности во наредбени редови:",
 	"maintenanceshell-field-submit": "Пушти ја скриптата"
