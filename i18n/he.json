@@ -6,6 +6,16 @@
 		]
 	},
 	"maintenanceshell": "מסוף תחזוקה",
+	"maintenanceshell-desc": "ממשק ויקי לסקריפטים של תחזוקה",
 	"right-maintenanceshell": "הפעלת סקריפטים לתחזוקה",
-	"action-maintenanceshell": "להפעיל מסוף תחזוקה"
+	"action-maintenanceshell": "להפעיל מסוף תחזוקה",
+	"maintenanceshell-legend": "מסוף תחזוקה",
+	"maintenanceshell-text": "<strong>אזהרה:</strong> יש להשתמש בסקריפטים אלה בזהירות. הם מיועדים למפתחים בלבד.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org /wiki/Special:MyLanguage/Extension:MaintenanceShell Extension:MaintenanceShell]",
+	"maintenanceshell-return": "חזרה לדף [[{{#special:maintenanceshell}}]].",
+	"maintenanceshell-error-scriptname": "הסקריפט לא נמצא",
+	"maintenanceshell-error-rawsubmit": "מטעמי אבטחה, הדף הזה דורש הפעלת JavaScript.",
+	"maintenanceshell-available": "סקריפטים זמינים של תחזוקה:",
+	"maintenanceshell-field-scriptname": "שם הסקריפט:",
+	"maintenanceshell-field-args": "אפשרויות שורת הפקודה:",
+	"maintenanceshell-field-submit": "הרצת סקריפט"
 }
