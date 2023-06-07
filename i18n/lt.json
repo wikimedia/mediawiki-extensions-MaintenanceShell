@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"maintenanceshell-desc": "Viki sąsają tvarkymo kodui",
+	"right-maintenanceshell": "Vykdyti tvarkymo kodus",
+	"action-maintenanceshell": "vykdyti tvarkymo kodus",
+	"maintenanceshell-return": "Grįžti į [[{{#special:maintenanceshell}}]]."
+}
