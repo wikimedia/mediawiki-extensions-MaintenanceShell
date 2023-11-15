@@ -4,14 +4,15 @@
 			"Brettchenweber",
 			"Kghbln",
 			"Metalhead64",
-			"kghbln"
+			"kghbln",
+			"Nekky-chan"
 		]
 	},
 	"maintenanceshell": "Wartungs-Shell",
-	"maintenanceshell-desc": "Erweitert das Wiki um eine eine Spezialseite, mit der Wartungsskripte zur Systemadministration ausgeführt werden können",
+	"maintenanceshell-desc": "Erweitert das Wiki um eine Spezialseite, mit der Wartungsskripte zur Systemadministration ausgeführt werden können",
 	"right-maintenanceshell": "Wartungsskripte über die Wartungs-Shell ausführen.",
-	"action-maintenanceshell": "die Wartungsshell auszuführen",
-	"maintenanceshell-legend": "Wartungsshell",
+	"action-maintenanceshell": "die Wartungs-Shell auszuführen",
+	"maintenanceshell-legend": "Wartungs-Shell",
 	"maintenanceshell-text": "<strong>Warnung:</strong> Benutze diese Skripte mit Vorsicht. Sie sind nur für Entwickler gedacht.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts/de Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "Rückkehr zu [[{{#special:maintenanceshell}}]]",
 	"maintenanceshell-error-scriptname": "Skript nicht gefunden",
