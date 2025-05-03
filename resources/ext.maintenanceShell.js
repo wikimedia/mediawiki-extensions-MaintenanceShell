@@ -22,7 +22,7 @@
 				e.preventDefault();
 
 				// Get data
-				var $spinner,
+				let $spinner,
 					$tmpWrap,
 					$form = $( this ),
 					postData = $form.serialize(),
@@ -45,7 +45,7 @@
 				// (which could be, but is purposely not supported. If you run a
 				// wiki farm, you're either expected to have command line access or
 				// just access this SpecialPage from the correct wiki)
-				if ( postData.indexOf( '--wiki' ) !== -1 ) {
+				if ( postData.includes( '--wiki' ) ) {
 					err( $shell, 'Usage of the --wiki option is not allowed by MaintenanceShell.' );
 					$inputs.prop( 'disabled', false );
 					$spinner.remove();
@@ -60,11 +60,11 @@
 					cache: false,
 					dataType: 'text'
 				} )
-					.done( function ( data ) {
+					.done( ( data ) => {
 						// In case of error, the server will respond with a full html page.
 						// Extract the SpecialPage wrapper, and replace our current one to show the error.
 						// Then re-run our init handlers on the wrapper.
-						if ( data.indexOf( 'mw-sp-maintenanceShell' ) !== -1 || data.indexOf( 'controlfield' ) !== -1 ) {
+						if ( data.includes( 'mw-sp-maintenanceShell' ) || data.includes( 'controlfield' ) ) {
 							$tmpWrap = $( data ).find( '.mw-sp-maintenanceShell' ).eq( 0 );
 							$wrap.replaceWith( $tmpWrap );
 							init( $tmpWrap );
@@ -72,10 +72,10 @@
 							$shell.text( $.trim( data ) );
 						}
 					} )
-					.fail( function ( jqXHR, textStatus, errorThrown ) {
+					.fail( ( jqXHR, textStatus, errorThrown ) => {
 						err( $shell, errorThrown || 'Request failed.' );
 					} )
-					.complete( function () {
+					.complete( () => {
 						// Re-enable form and hide spinner
 						$inputs.prop( 'disabled', false );
 						$spinner.remove();
@@ -84,7 +84,7 @@
 	}
 
 	// Kick it off
-	$( function () {
+	$( () => {
 		init( $( '.mw-sp-maintenanceShell' ) );
 	} );
 
