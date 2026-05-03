@@ -10,9 +10,14 @@ use MediaWiki\MediaWikiServices;
  */
 class SpecialMaintenanceShell extends FormSpecialPage {
 	public function __construct() {
-		parent::__construct( 'MaintenanceShell', 'maintenanceshell' );
+		parent::__construct( 'MaintenanceShell' );
 		$out = $this->getOutput();
 		$out->addModules( 'ext.maintenanceShell' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'maintenanceshell';
 	}
 
 	public function execute( $par ) {
