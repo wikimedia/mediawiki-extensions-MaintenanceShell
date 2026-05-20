@@ -8,7 +8,7 @@
 	"maintenanceshell": "유지보수 셸",
 	"maintenanceshell-desc": "유지보스 스크립트를 위한 위키 인터페이스",
 	"right-maintenanceshell": "유지보수 스크립트 실행",
-	"action-maintenanceshell": "유지보수 셸을 실행할",
+	"action-maintenanceshell": "유지보수 셸 실행",
 	"maintenanceshell-legend": "유지보수 셸",
 	"maintenanceshell-text": "<strong>경고:</strong> 이 스크립트는 주의하여 사용하십시오. 이것은 개발자들만을 위해 제작되었습니다.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts Manual:Maintenance scripts]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell Extension:MaintenanceShell]",
 	"maintenanceshell-return": "[[{{#special:maintenanceshell}}]]로 돌아가기.",
